@@ -1,10 +1,10 @@
 # PingPong-PL
 
+**PL** | [EN](README.en.md)
+
 Polska adaptacja benchmarku odgrywania ról **PingPong** ([Gusev 2024, arXiv:2409.06820](https://arxiv.org/abs/2409.06820),
 [ping_pong_bench](https://github.com/IlyaGusev/ping_pong_bench)). Sprawdza, jak model językowy gra postać w wieloturowej
 rozmowie po polsku: czy trzyma się roli, czy jest zajmujący i czy pisze dobrą polszczyzną.
-
-*English summary below.*
 
 ## Jak to działa
 
