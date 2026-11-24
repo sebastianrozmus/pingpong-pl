@@ -1,0 +1,2 @@
+# Only needed for Claude players (--backend anthropic). Everything else uses the Python standard library.
+anthropic>=2.13

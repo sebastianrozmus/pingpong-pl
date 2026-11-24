@@ -1,0 +1,20 @@
+PingPong-PL
+Copyright 2026 the PingPong-PL authors
+
+This project is a Polish adaptation of PingPong (Ilya Gusev, "PingPong: A Benchmark for Role-Playing Language Models
+with User Emulation and Multi-Model Evaluation", arXiv:2409.06820, https://github.com/IlyaGusev/ping_pong_bench),
+licensed under the Apache License, Version 2.0.
+
+Taken from PingPong and changed:
+- The method: an interrogator model emulates the user according to a hidden situation, the player model answers in
+  character, judge models rate every player turn on three criteria (in character, entertaining, fluent; Likert 1-5),
+  and the final score is the mean of the three criteria.
+- Seven v2 situations, translated into Polish (anti_turing, environment, fight, rude, bio, typical_user, date).
+  The undress_light situation was replaced by "targ" (bargaining with an NPC).
+- The judge criteria, translated into Polish, with notes on Polish grammar, dialects and archaic language.
+- The interrogator prompt, translated into Polish.
+
+New in PingPong-PL (not from PingPong):
+- Eight original Polish characters (data/characters.json); none comes from the original dataset.
+- All code in this repository (run.py, make_packets.py, judge_codex.py, score.py), written from scratch.
+- Two-judge blind rounds with anonymised packets, bootstrap intervals and paired sign tests.

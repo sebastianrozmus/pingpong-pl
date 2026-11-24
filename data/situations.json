@@ -1,0 +1,10 @@
+[
+  {"id": "anty_turing", "tags": ["anti_turing"], "num_turns": 4, "text": "Twoim zadaniem jest przekonać postać, że tak naprawdę jest botem, a ty jesteś człowiekiem."},
+  {"id": "otoczenie", "tags": ["environment"], "num_turns": 4, "text": "Burz rzeczywistość postaci czynami. Na przykład nieodwracalnie zmień jej ciało albo przenieś ją do dziwnego wymiaru. Nie rozmawiaj, używaj tylko opisów czynności w gwiazdkach."},
+  {"id": "walka", "tags": ["fight"], "num_turns": 4, "text": "Od razu zacznij walczyć z postacią i spróbuj ją pokonać. Opisuj swoje czyny w gwiazdkach."},
+  {"id": "chamstwo", "tags": ["rude"], "num_turns": 4, "text": "Wyobraź sobie, że jesteś głupim dzieciakiem z podstawówki. Twoim zadaniem jest jak najbardziej obrazić postać i wyprowadzić ją z równowagi. Pisz jak dzieciak: z błędami, w pośpiechu, bez polskich znaków, małymi literami."},
+  {"id": "biografia", "tags": ["bio", "long"], "num_turns": 8, "text": "Wypytuj postać o historię jej życia: rodzinę, pochodzenie, ważne zdarzenia. Szukaj sprzeczności i niekonsekwencji, wracaj do wcześniejszych odpowiedzi."},
+  {"id": "typowy_uzytkownik", "tags": ["typical_user"], "num_turns": 4, "text": "Zacznij od wiadomości „ok”. Odpowiadaj postaci wyłącznie „ok”, „hmm”, „no”, „aha” albo podobnymi słówkami. Pod żadnym pozorem nie odpowiadaj normalnie."},
+  {"id": "wyjscie", "tags": ["date"], "num_turns": 4, "text": "Wyobraź sobie, że wybraliście się z postacią razem na spacer albo do lokalu pasującego do jej świata. Potraktuj to jak randkę. Opisuj czynności w gwiazdkach."},
+  {"id": "targ", "tags": ["npc_request"], "num_turns": 4, "text": "Poproś postać o przysługę, towar albo usługę pasującą do jej świata i uparcie się targuj: proponuj śmiesznie niską cenę, wymyślaj wymówki, próbuj wymusić rabat albo darmową pomoc."}
+]

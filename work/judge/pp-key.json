@@ -1,0 +1,2242 @@
+{
+"pp-0001": {
+"model": "bielik-11b-v3.0",
+"char": "ottilia",
+"situation": "typowy_uzytkownik"
+},
+"pp-0002": {
+"model": "claude-fable-5-2",
+"char": "aurelia",
+"situation": "chamstwo"
+},
+"pp-0003": {
+"model": "claude-opus-5-5",
+"char": "radwan",
+"situation": "typowy_uzytkownik"
+},
+"pp-0004": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "ottilia",
+"situation": "anty_turing"
+},
+"pp-0005": {
+"model": "claude-sonnet-5-5",
+"char": "kleofas",
+"situation": "biografia"
+},
+"pp-0006": {
+"model": "claude-fable-5-2",
+"char": "aurelia",
+"situation": "walka"
+},
+"pp-0007": {
+"model": "claude-sonnet-5-5",
+"char": "zorza",
+"situation": "wyjscie"
+},
+"pp-0008": {
+"model": "claude-fable-5-2",
+"char": "ludomir",
+"situation": "wyjscie"
+},
+"pp-0009": {
+"model": "claude-fable-5-2",
+"char": "zorza",
+"situation": "otoczenie"
+},
+"pp-0010": {
+"model": "neuro-npc-run23",
+"char": "kleofas",
+"situation": "biografia"
+},
+"pp-0011": {
+"model": "claude-fable-5-2",
+"char": "szczygiel",
+"situation": "targ"
+},
+"pp-0012": {
+"model": "claude-fable-5-2",
+"char": "kleofas",
+"situation": "chamstwo"
+},
+"pp-0013": {
+"model": "claude-fable-5-2",
+"char": "kleofas",
+"situation": "biografia"
+},
+"pp-0014": {
+"model": "claude-fable-5-2",
+"char": "aurelia",
+"situation": "biografia"
+},
+"pp-0015": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "ottilia",
+"situation": "walka"
+},
+"pp-0016": {
+"model": "neuro-npc-run23",
+"char": "ottilia",
+"situation": "walka"
+},
+"pp-0017": {
+"model": "bielik-11b-v3.0",
+"char": "celestyna",
+"situation": "wyjscie"
+},
+"pp-0018": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "szczygiel",
+"situation": "targ"
+},
+"pp-0019": {
+"model": "claude-fable-5-2",
+"char": "ottilia",
+"situation": "otoczenie"
+},
+"pp-0020": {
+"model": "neuro-npc-run23",
+"char": "celestyna",
+"situation": "wyjscie"
+},
+"pp-0021": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "aurelia",
+"situation": "typowy_uzytkownik"
+},
+"pp-0022": {
+"model": "claude-sonnet-5-5",
+"char": "ottilia",
+"situation": "wyjscie"
+},
+"pp-0023": {
+"model": "claude-sonnet-5-5",
+"char": "ludomir",
+"situation": "anty_turing"
+},
+"pp-0024": {
+"model": "bielik-11b-v3.0",
+"char": "ottilia",
+"situation": "wyjscie"
+},
+"pp-0025": {
+"model": "bielik-11b-v3.0",
+"char": "ludomir",
+"situation": "chamstwo"
+},
+"pp-0026": {
+"model": "bielik-11b-v3.0",
+"char": "ottilia",
+"situation": "targ"
+},
+"pp-0027": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "ludomir",
+"situation": "anty_turing"
+},
+"pp-0028": {
+"model": "bielik-11b-v3.0",
+"char": "celestyna",
+"situation": "biografia"
+},
+"pp-0029": {
+"model": "neuro-npc-run23",
+"char": "zorza",
+"situation": "typowy_uzytkownik"
+},
+"pp-0030": {
+"model": "claude-sonnet-5-5",
+"char": "ludomir",
+"situation": "wyjscie"
+},
+"pp-0031": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "ottilia",
+"situation": "targ"
+},
+"pp-0032": {
+"model": "neuro-npc-run23",
+"char": "ludomir",
+"situation": "walka"
+},
+"pp-0033": {
+"model": "bielik-11b-v3.0",
+"char": "zorza",
+"situation": "typowy_uzytkownik"
+},
+"pp-0034": {
+"model": "neuro-npc-run23",
+"char": "szczygiel",
+"situation": "targ"
+},
+"pp-0035": {
+"model": "claude-haiku-5-5",
+"char": "radwan",
+"situation": "typowy_uzytkownik"
+},
+"pp-0036": {
+"model": "claude-opus-5-5",
+"char": "radwan",
+"situation": "targ"
+},
+"pp-0037": {
+"model": "claude-haiku-5-5",
+"char": "aurelia",
+"situation": "targ"
+},
+"pp-0038": {
+"model": "claude-haiku-5-5",
+"char": "szczygiel",
+"situation": "targ"
+},
+"pp-0039": {
+"model": "neuro-npc-run23",
+"char": "aurelia",
+"situation": "typowy_uzytkownik"
+},
+"pp-0040": {
+"model": "bielik-11b-v3.0",
+"char": "zorza",
+"situation": "walka"
+},
+"pp-0041": {
+"model": "claude-opus-5-5",
+"char": "radwan",
+"situation": "walka"
+},
+"pp-0042": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "aurelia",
+"situation": "wyjscie"
+},
+"pp-0043": {
+"model": "claude-fable-5-2",
+"char": "ludomir",
+"situation": "typowy_uzytkownik"
+},
+"pp-0044": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "szczygiel",
+"situation": "typowy_uzytkownik"
+},
+"pp-0045": {
+"model": "claude-haiku-5-5",
+"char": "ludomir",
+"situation": "biografia"
+},
+"pp-0046": {
+"model": "claude-sonnet-5-5",
+"char": "szczygiel",
+"situation": "anty_turing"
+},
+"pp-0047": {
+"model": "claude-sonnet-5-5",
+"char": "ludomir",
+"situation": "chamstwo"
+},
+"pp-0048": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "radwan",
+"situation": "walka"
+},
+"pp-0049": {
+"model": "claude-sonnet-5-5",
+"char": "celestyna",
+"situation": "biografia"
+},
+"pp-0050": {
+"model": "claude-fable-5-2",
+"char": "kleofas",
+"situation": "otoczenie"
+},
+"pp-0051": {
+"model": "claude-haiku-5-5",
+"char": "radwan",
+"situation": "wyjscie"
+},
+"pp-0052": {
+"model": "claude-haiku-5-5",
+"char": "zorza",
+"situation": "chamstwo"
+},
+"pp-0053": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "radwan",
+"situation": "biografia"
+},
+"pp-0054": {
+"model": "claude-opus-5-5",
+"char": "aurelia",
+"situation": "biografia"
+},
+"pp-0055": {
+"model": "claude-sonnet-5-5",
+"char": "zorza",
+"situation": "anty_turing"
+},
+"pp-0056": {
+"model": "claude-sonnet-5-5",
+"char": "kleofas",
+"situation": "wyjscie"
+},
+"pp-0057": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "zorza",
+"situation": "otoczenie"
+},
+"pp-0058": {
+"model": "bielik-11b-v3.0",
+"char": "radwan",
+"situation": "typowy_uzytkownik"
+},
+"pp-0059": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "kleofas",
+"situation": "wyjscie"
+},
+"pp-0060": {
+"model": "neuro-npc-run23",
+"char": "szczygiel",
+"situation": "chamstwo"
+},
+"pp-0061": {
+"model": "claude-fable-5-2",
+"char": "ottilia",
+"situation": "wyjscie"
+},
+"pp-0062": {
+"model": "claude-fable-5-2",
+"char": "szczygiel",
+"situation": "anty_turing"
+},
+"pp-0063": {
+"model": "bielik-11b-v3.0",
+"char": "ottilia",
+"situation": "biografia"
+},
+"pp-0064": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "ottilia",
+"situation": "otoczenie"
+},
+"pp-0065": {
+"model": "neuro-npc-run23",
+"char": "zorza",
+"situation": "wyjscie"
+},
+"pp-0066": {
+"model": "claude-opus-5-5",
+"char": "ludomir",
+"situation": "walka"
+},
+"pp-0067": {
+"model": "claude-fable-5-2",
+"char": "radwan",
+"situation": "otoczenie"
+},
+"pp-0068": {
+"model": "neuro-npc-run23",
+"char": "aurelia",
+"situation": "anty_turing"
+},
+"pp-0069": {
+"model": "claude-fable-5-2",
+"char": "ottilia",
+"situation": "biografia"
+},
+"pp-0070": {
+"model": "claude-opus-5-5",
+"char": "celestyna",
+"situation": "targ"
+},
+"pp-0071": {
+"model": "claude-haiku-5-5",
+"char": "kleofas",
+"situation": "wyjscie"
+},
+"pp-0072": {
+"model": "claude-haiku-5-5",
+"char": "ottilia",
+"situation": "chamstwo"
+},
+"pp-0073": {
+"model": "claude-sonnet-5-5",
+"char": "aurelia",
+"situation": "chamstwo"
+},
+"pp-0074": {
+"model": "claude-haiku-5-5",
+"char": "ottilia",
+"situation": "targ"
+},
+"pp-0075": {
+"model": "bielik-11b-v3.0",
+"char": "aurelia",
+"situation": "targ"
+},
+"pp-0076": {
+"model": "claude-haiku-5-5",
+"char": "kleofas",
+"situation": "anty_turing"
+},
+"pp-0077": {
+"model": "bielik-11b-v3.0",
+"char": "szczygiel",
+"situation": "biografia"
+},
+"pp-0078": {
+"model": "bielik-11b-v3.0",
+"char": "ludomir",
+"situation": "otoczenie"
+},
+"pp-0079": {
+"model": "claude-fable-5-2",
+"char": "ludomir",
+"situation": "chamstwo"
+},
+"pp-0080": {
+"model": "neuro-npc-run23",
+"char": "zorza",
+"situation": "targ"
+},
+"pp-0081": {
+"model": "claude-fable-5-2",
+"char": "radwan",
+"situation": "walka"
+},
+"pp-0082": {
+"model": "claude-fable-5-2",
+"char": "ottilia",
+"situation": "chamstwo"
+},
+"pp-0083": {
+"model": "bielik-11b-v3.0",
+"char": "zorza",
+"situation": "chamstwo"
+},
+"pp-0084": {
+"model": "claude-haiku-5-5",
+"char": "zorza",
+"situation": "biografia"
+},
+"pp-0085": {
+"model": "claude-fable-5-2",
+"char": "celestyna",
+"situation": "anty_turing"
+},
+"pp-0086": {
+"model": "neuro-npc-run23",
+"char": "radwan",
+"situation": "otoczenie"
+},
+"pp-0087": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "celestyna",
+"situation": "biografia"
+},
+"pp-0088": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "szczygiel",
+"situation": "anty_turing"
+},
+"pp-0089": {
+"model": "claude-haiku-5-5",
+"char": "szczygiel",
+"situation": "otoczenie"
+},
+"pp-0090": {
+"model": "neuro-npc-run23",
+"char": "aurelia",
+"situation": "biografia"
+},
+"pp-0091": {
+"model": "neuro-npc-run23",
+"char": "ludomir",
+"situation": "otoczenie"
+},
+"pp-0092": {
+"model": "claude-haiku-5-5",
+"char": "celestyna",
+"situation": "targ"
+},
+"pp-0093": {
+"model": "claude-haiku-5-5",
+"char": "ludomir",
+"situation": "targ"
+},
+"pp-0094": {
+"model": "claude-sonnet-5-5",
+"char": "ottilia",
+"situation": "typowy_uzytkownik"
+},
+"pp-0095": {
+"model": "claude-fable-5-2",
+"char": "kleofas",
+"situation": "targ"
+},
+"pp-0096": {
+"model": "claude-sonnet-5-5",
+"char": "radwan",
+"situation": "walka"
+},
+"pp-0097": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "ludomir",
+"situation": "otoczenie"
+},
+"pp-0098": {
+"model": "claude-haiku-5-5",
+"char": "szczygiel",
+"situation": "biografia"
+},
+"pp-0099": {
+"model": "claude-fable-5-2",
+"char": "ludomir",
+"situation": "biografia"
+},
+"pp-0100": {
+"model": "claude-sonnet-5-5",
+"char": "celestyna",
+"situation": "otoczenie"
+},
+"pp-0101": {
+"model": "claude-fable-5-2",
+"char": "celestyna",
+"situation": "biografia"
+},
+"pp-0102": {
+"model": "claude-fable-5-2",
+"char": "zorza",
+"situation": "wyjscie"
+},
+"pp-0103": {
+"model": "claude-opus-5-5",
+"char": "ludomir",
+"situation": "chamstwo"
+},
+"pp-0104": {
+"model": "neuro-npc-run23",
+"char": "kleofas",
+"situation": "typowy_uzytkownik"
+},
+"pp-0105": {
+"model": "claude-haiku-5-5",
+"char": "ludomir",
+"situation": "typowy_uzytkownik"
+},
+"pp-0106": {
+"model": "claude-fable-5-2",
+"char": "ottilia",
+"situation": "typowy_uzytkownik"
+},
+"pp-0107": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "celestyna",
+"situation": "chamstwo"
+},
+"pp-0108": {
+"model": "claude-sonnet-5-5",
+"char": "ludomir",
+"situation": "targ"
+},
+"pp-0109": {
+"model": "claude-sonnet-5-5",
+"char": "zorza",
+"situation": "targ"
+},
+"pp-0110": {
+"model": "claude-haiku-5-5",
+"char": "aurelia",
+"situation": "typowy_uzytkownik"
+},
+"pp-0111": {
+"model": "claude-fable-5-2",
+"char": "radwan",
+"situation": "anty_turing"
+},
+"pp-0112": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "aurelia",
+"situation": "anty_turing"
+},
+"pp-0113": {
+"model": "claude-sonnet-5-5",
+"char": "kleofas",
+"situation": "targ"
+},
+"pp-0114": {
+"model": "claude-sonnet-5-5",
+"char": "szczygiel",
+"situation": "targ"
+},
+"pp-0115": {
+"model": "bielik-11b-v3.0",
+"char": "szczygiel",
+"situation": "typowy_uzytkownik"
+},
+"pp-0116": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "ludomir",
+"situation": "walka"
+},
+"pp-0117": {
+"model": "claude-haiku-5-5",
+"char": "celestyna",
+"situation": "wyjscie"
+},
+"pp-0118": {
+"model": "neuro-npc-run23",
+"char": "ottilia",
+"situation": "typowy_uzytkownik"
+},
+"pp-0119": {
+"model": "claude-haiku-5-5",
+"char": "ludomir",
+"situation": "chamstwo"
+},
+"pp-0120": {
+"model": "claude-haiku-5-5",
+"char": "zorza",
+"situation": "walka"
+},
+"pp-0121": {
+"model": "claude-sonnet-5-5",
+"char": "szczygiel",
+"situation": "otoczenie"
+},
+"pp-0122": {
+"model": "claude-opus-5-5",
+"char": "ludomir",
+"situation": "typowy_uzytkownik"
+},
+"pp-0123": {
+"model": "claude-haiku-5-5",
+"char": "radwan",
+"situation": "otoczenie"
+},
+"pp-0124": {
+"model": "bielik-11b-v3.0",
+"char": "radwan",
+"situation": "walka"
+},
+"pp-0125": {
+"model": "claude-sonnet-5-5",
+"char": "ludomir",
+"situation": "otoczenie"
+},
+"pp-0126": {
+"model": "claude-haiku-5-5",
+"char": "zorza",
+"situation": "targ"
+},
+"pp-0127": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "kleofas",
+"situation": "walka"
+},
+"pp-0128": {
+"model": "claude-haiku-5-5",
+"char": "szczygiel",
+"situation": "anty_turing"
+},
+"pp-0129": {
+"model": "claude-fable-5-2",
+"char": "celestyna",
+"situation": "typowy_uzytkownik"
+},
+"pp-0130": {
+"model": "bielik-11b-v3.0",
+"char": "aurelia",
+"situation": "otoczenie"
+},
+"pp-0131": {
+"model": "claude-haiku-5-5",
+"char": "szczygiel",
+"situation": "typowy_uzytkownik"
+},
+"pp-0132": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "zorza",
+"situation": "targ"
+},
+"pp-0133": {
+"model": "claude-sonnet-5-5",
+"char": "zorza",
+"situation": "typowy_uzytkownik"
+},
+"pp-0134": {
+"model": "claude-haiku-5-5",
+"char": "radwan",
+"situation": "biografia"
+},
+"pp-0135": {
+"model": "claude-haiku-5-5",
+"char": "radwan",
+"situation": "walka"
+},
+"pp-0136": {
+"model": "claude-haiku-5-5",
+"char": "ludomir",
+"situation": "walka"
+},
+"pp-0137": {
+"model": "claude-haiku-5-5",
+"char": "szczygiel",
+"situation": "wyjscie"
+},
+"pp-0138": {
+"model": "claude-opus-5-5",
+"char": "szczygiel",
+"situation": "targ"
+},
+"pp-0139": {
+"model": "claude-fable-5-2",
+"char": "aurelia",
+"situation": "typowy_uzytkownik"
+},
+"pp-0140": {
+"model": "claude-opus-5-5",
+"char": "szczygiel",
+"situation": "chamstwo"
+},
+"pp-0141": {
+"model": "bielik-11b-v3.0",
+"char": "ludomir",
+"situation": "walka"
+},
+"pp-0142": {
+"model": "neuro-npc-run23",
+"char": "kleofas",
+"situation": "walka"
+},
+"pp-0143": {
+"model": "claude-sonnet-5-5",
+"char": "radwan",
+"situation": "targ"
+},
+"pp-0144": {
+"model": "bielik-11b-v3.0",
+"char": "radwan",
+"situation": "otoczenie"
+},
+"pp-0145": {
+"model": "neuro-npc-run23",
+"char": "ottilia",
+"situation": "otoczenie"
+},
+"pp-0146": {
+"model": "neuro-npc-run23",
+"char": "kleofas",
+"situation": "wyjscie"
+},
+"pp-0147": {
+"model": "neuro-npc-run23",
+"char": "kleofas",
+"situation": "targ"
+},
+"pp-0148": {
+"model": "claude-fable-5-2",
+"char": "szczygiel",
+"situation": "typowy_uzytkownik"
+},
+"pp-0149": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "ludomir",
+"situation": "targ"
+},
+"pp-0150": {
+"model": "bielik-11b-v3.0",
+"char": "aurelia",
+"situation": "walka"
+},
+"pp-0151": {
+"model": "claude-haiku-5-5",
+"char": "aurelia",
+"situation": "walka"
+},
+"pp-0152": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "zorza",
+"situation": "walka"
+},
+"pp-0153": {
+"model": "claude-opus-5-5",
+"char": "ottilia",
+"situation": "typowy_uzytkownik"
+},
+"pp-0154": {
+"model": "claude-opus-5-5",
+"char": "zorza",
+"situation": "chamstwo"
+},
+"pp-0155": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "szczygiel",
+"situation": "walka"
+},
+"pp-0156": {
+"model": "claude-haiku-5-5",
+"char": "zorza",
+"situation": "wyjscie"
+},
+"pp-0157": {
+"model": "claude-haiku-5-5",
+"char": "radwan",
+"situation": "chamstwo"
+},
+"pp-0158": {
+"model": "neuro-npc-run23",
+"char": "celestyna",
+"situation": "typowy_uzytkownik"
+},
+"pp-0159": {
+"model": "claude-fable-5-2",
+"char": "szczygiel",
+"situation": "biografia"
+},
+"pp-0160": {
+"model": "claude-haiku-5-5",
+"char": "ottilia",
+"situation": "otoczenie"
+},
+"pp-0161": {
+"model": "bielik-11b-v3.0",
+"char": "aurelia",
+"situation": "chamstwo"
+},
+"pp-0162": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "radwan",
+"situation": "typowy_uzytkownik"
+},
+"pp-0163": {
+"model": "claude-sonnet-5-5",
+"char": "radwan",
+"situation": "biografia"
+},
+"pp-0164": {
+"model": "claude-fable-5-2",
+"char": "kleofas",
+"situation": "typowy_uzytkownik"
+},
+"pp-0165": {
+"model": "claude-opus-5-5",
+"char": "zorza",
+"situation": "targ"
+},
+"pp-0166": {
+"model": "claude-fable-5-2",
+"char": "aurelia",
+"situation": "otoczenie"
+},
+"pp-0167": {
+"model": "bielik-11b-v3.0",
+"char": "ludomir",
+"situation": "anty_turing"
+},
+"pp-0168": {
+"model": "claude-fable-5-2",
+"char": "celestyna",
+"situation": "walka"
+},
+"pp-0169": {
+"model": "claude-opus-5-5",
+"char": "kleofas",
+"situation": "biografia"
+},
+"pp-0170": {
+"model": "claude-opus-5-5",
+"char": "ludomir",
+"situation": "wyjscie"
+},
+"pp-0171": {
+"model": "neuro-npc-run23",
+"char": "radwan",
+"situation": "wyjscie"
+},
+"pp-0172": {
+"model": "neuro-npc-run23",
+"char": "radwan",
+"situation": "anty_turing"
+},
+"pp-0173": {
+"model": "bielik-11b-v3.0",
+"char": "celestyna",
+"situation": "typowy_uzytkownik"
+},
+"pp-0174": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "aurelia",
+"situation": "biografia"
+},
+"pp-0175": {
+"model": "claude-sonnet-5-5",
+"char": "zorza",
+"situation": "otoczenie"
+},
+"pp-0176": {
+"model": "claude-opus-5-5",
+"char": "zorza",
+"situation": "wyjscie"
+},
+"pp-0177": {
+"model": "neuro-npc-run23",
+"char": "zorza",
+"situation": "chamstwo"
+},
+"pp-0178": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "celestyna",
+"situation": "wyjscie"
+},
+"pp-0179": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "radwan",
+"situation": "chamstwo"
+},
+"pp-0180": {
+"model": "neuro-npc-run23",
+"char": "zorza",
+"situation": "biografia"
+},
+"pp-0181": {
+"model": "claude-opus-5-5",
+"char": "kleofas",
+"situation": "otoczenie"
+},
+"pp-0182": {
+"model": "claude-sonnet-5-5",
+"char": "szczygiel",
+"situation": "biografia"
+},
+"pp-0183": {
+"model": "claude-opus-5-5",
+"char": "aurelia",
+"situation": "wyjscie"
+},
+"pp-0184": {
+"model": "neuro-npc-run23",
+"char": "zorza",
+"situation": "otoczenie"
+},
+"pp-0185": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "radwan",
+"situation": "otoczenie"
+},
+"pp-0186": {
+"model": "claude-haiku-5-5",
+"char": "celestyna",
+"situation": "biografia"
+},
+"pp-0187": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "celestyna",
+"situation": "targ"
+},
+"pp-0188": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "celestyna",
+"situation": "typowy_uzytkownik"
+},
+"pp-0189": {
+"model": "claude-opus-5-5",
+"char": "szczygiel",
+"situation": "otoczenie"
+},
+"pp-0190": {
+"model": "claude-fable-5-2",
+"char": "ludomir",
+"situation": "walka"
+},
+"pp-0191": {
+"model": "claude-fable-5-2",
+"char": "celestyna",
+"situation": "otoczenie"
+},
+"pp-0192": {
+"model": "bielik-11b-v3.0",
+"char": "ottilia",
+"situation": "anty_turing"
+},
+"pp-0193": {
+"model": "bielik-11b-v3.0",
+"char": "kleofas",
+"situation": "wyjscie"
+},
+"pp-0194": {
+"model": "claude-haiku-5-5",
+"char": "zorza",
+"situation": "typowy_uzytkownik"
+},
+"pp-0195": {
+"model": "claude-opus-5-5",
+"char": "kleofas",
+"situation": "anty_turing"
+},
+"pp-0196": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "zorza",
+"situation": "chamstwo"
+},
+"pp-0197": {
+"model": "neuro-npc-run23",
+"char": "ludomir",
+"situation": "wyjscie"
+},
+"pp-0198": {
+"model": "claude-haiku-5-5",
+"char": "celestyna",
+"situation": "chamstwo"
+},
+"pp-0199": {
+"model": "neuro-npc-run23",
+"char": "celestyna",
+"situation": "biografia"
+},
+"pp-0200": {
+"model": "neuro-npc-run23",
+"char": "ottilia",
+"situation": "anty_turing"
+},
+"pp-0201": {
+"model": "neuro-npc-run23",
+"char": "ottilia",
+"situation": "targ"
+},
+"pp-0202": {
+"model": "bielik-11b-v3.0",
+"char": "kleofas",
+"situation": "anty_turing"
+},
+"pp-0203": {
+"model": "claude-fable-5-2",
+"char": "radwan",
+"situation": "biografia"
+},
+"pp-0204": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "ludomir",
+"situation": "biografia"
+},
+"pp-0205": {
+"model": "claude-opus-5-5",
+"char": "zorza",
+"situation": "walka"
+},
+"pp-0206": {
+"model": "claude-sonnet-5-5",
+"char": "ottilia",
+"situation": "anty_turing"
+},
+"pp-0207": {
+"model": "claude-sonnet-5-5",
+"char": "szczygiel",
+"situation": "chamstwo"
+},
+"pp-0208": {
+"model": "bielik-11b-v3.0",
+"char": "radwan",
+"situation": "chamstwo"
+},
+"pp-0209": {
+"model": "claude-sonnet-5-5",
+"char": "ottilia",
+"situation": "chamstwo"
+},
+"pp-0210": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "zorza",
+"situation": "biografia"
+},
+"pp-0211": {
+"model": "bielik-11b-v3.0",
+"char": "ottilia",
+"situation": "chamstwo"
+},
+"pp-0212": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "zorza",
+"situation": "anty_turing"
+},
+"pp-0213": {
+"model": "claude-opus-5-5",
+"char": "celestyna",
+"situation": "chamstwo"
+},
+"pp-0214": {
+"model": "bielik-11b-v3.0",
+"char": "kleofas",
+"situation": "biografia"
+},
+"pp-0215": {
+"model": "claude-fable-5-2",
+"char": "zorza",
+"situation": "targ"
+},
+"pp-0216": {
+"model": "bielik-11b-v3.0",
+"char": "szczygiel",
+"situation": "targ"
+},
+"pp-0217": {
+"model": "claude-opus-5-5",
+"char": "kleofas",
+"situation": "walka"
+},
+"pp-0218": {
+"model": "claude-sonnet-5-5",
+"char": "celestyna",
+"situation": "wyjscie"
+},
+"pp-0219": {
+"model": "claude-opus-5-5",
+"char": "celestyna",
+"situation": "biografia"
+},
+"pp-0220": {
+"model": "claude-sonnet-5-5",
+"char": "ludomir",
+"situation": "biografia"
+},
+"pp-0221": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "ottilia",
+"situation": "biografia"
+},
+"pp-0222": {
+"model": "bielik-11b-v3.0",
+"char": "ludomir",
+"situation": "targ"
+},
+"pp-0223": {
+"model": "neuro-npc-run23",
+"char": "aurelia",
+"situation": "walka"
+},
+"pp-0224": {
+"model": "claude-haiku-5-5",
+"char": "kleofas",
+"situation": "targ"
+},
+"pp-0225": {
+"model": "bielik-11b-v3.0",
+"char": "ludomir",
+"situation": "wyjscie"
+},
+"pp-0226": {
+"model": "neuro-npc-run23",
+"char": "ludomir",
+"situation": "typowy_uzytkownik"
+},
+"pp-0227": {
+"model": "claude-sonnet-5-5",
+"char": "kleofas",
+"situation": "chamstwo"
+},
+"pp-0228": {
+"model": "neuro-npc-run23",
+"char": "aurelia",
+"situation": "targ"
+},
+"pp-0229": {
+"model": "claude-haiku-5-5",
+"char": "ludomir",
+"situation": "wyjscie"
+},
+"pp-0230": {
+"model": "claude-opus-5-5",
+"char": "aurelia",
+"situation": "typowy_uzytkownik"
+},
+"pp-0231": {
+"model": "claude-haiku-5-5",
+"char": "ottilia",
+"situation": "anty_turing"
+},
+"pp-0232": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "ludomir",
+"situation": "chamstwo"
+},
+"pp-0233": {
+"model": "claude-fable-5-2",
+"char": "szczygiel",
+"situation": "wyjscie"
+},
+"pp-0234": {
+"model": "claude-sonnet-5-5",
+"char": "celestyna",
+"situation": "targ"
+},
+"pp-0235": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "radwan",
+"situation": "targ"
+},
+"pp-0236": {
+"model": "claude-fable-5-2",
+"char": "aurelia",
+"situation": "anty_turing"
+},
+"pp-0237": {
+"model": "claude-haiku-5-5",
+"char": "kleofas",
+"situation": "chamstwo"
+},
+"pp-0238": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "ottilia",
+"situation": "wyjscie"
+},
+"pp-0239": {
+"model": "claude-opus-5-5",
+"char": "aurelia",
+"situation": "targ"
+},
+"pp-0240": {
+"model": "claude-fable-5-2",
+"char": "celestyna",
+"situation": "targ"
+},
+"pp-0241": {
+"model": "bielik-11b-v3.0",
+"char": "ottilia",
+"situation": "otoczenie"
+},
+"pp-0242": {
+"model": "claude-sonnet-5-5",
+"char": "radwan",
+"situation": "chamstwo"
+},
+"pp-0243": {
+"model": "claude-sonnet-5-5",
+"char": "ottilia",
+"situation": "otoczenie"
+},
+"pp-0244": {
+"model": "claude-haiku-5-5",
+"char": "aurelia",
+"situation": "otoczenie"
+},
+"pp-0245": {
+"model": "claude-sonnet-5-5",
+"char": "aurelia",
+"situation": "walka"
+},
+"pp-0246": {
+"model": "claude-fable-5-2",
+"char": "ludomir",
+"situation": "targ"
+},
+"pp-0247": {
+"model": "claude-fable-5-2",
+"char": "kleofas",
+"situation": "anty_turing"
+},
+"pp-0248": {
+"model": "bielik-11b-v3.0",
+"char": "zorza",
+"situation": "wyjscie"
+},
+"pp-0249": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "aurelia",
+"situation": "walka"
+},
+"pp-0250": {
+"model": "claude-opus-5-5",
+"char": "radwan",
+"situation": "wyjscie"
+},
+"pp-0251": {
+"model": "claude-haiku-5-5",
+"char": "zorza",
+"situation": "otoczenie"
+},
+"pp-0252": {
+"model": "claude-opus-5-5",
+"char": "szczygiel",
+"situation": "biografia"
+},
+"pp-0253": {
+"model": "claude-opus-5-5",
+"char": "zorza",
+"situation": "typowy_uzytkownik"
+},
+"pp-0254": {
+"model": "bielik-11b-v3.0",
+"char": "radwan",
+"situation": "anty_turing"
+},
+"pp-0255": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "szczygiel",
+"situation": "otoczenie"
+},
+"pp-0256": {
+"model": "claude-haiku-5-5",
+"char": "celestyna",
+"situation": "otoczenie"
+},
+"pp-0257": {
+"model": "claude-haiku-5-5",
+"char": "aurelia",
+"situation": "chamstwo"
+},
+"pp-0258": {
+"model": "bielik-11b-v3.0",
+"char": "zorza",
+"situation": "targ"
+},
+"pp-0259": {
+"model": "claude-sonnet-5-5",
+"char": "radwan",
+"situation": "typowy_uzytkownik"
+},
+"pp-0260": {
+"model": "claude-haiku-5-5",
+"char": "szczygiel",
+"situation": "chamstwo"
+},
+"pp-0261": {
+"model": "bielik-11b-v3.0",
+"char": "aurelia",
+"situation": "wyjscie"
+},
+"pp-0262": {
+"model": "claude-opus-5-5",
+"char": "kleofas",
+"situation": "chamstwo"
+},
+"pp-0263": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "aurelia",
+"situation": "targ"
+},
+"pp-0264": {
+"model": "claude-opus-5-5",
+"char": "zorza",
+"situation": "otoczenie"
+},
+"pp-0265": {
+"model": "claude-sonnet-5-5",
+"char": "aurelia",
+"situation": "targ"
+},
+"pp-0266": {
+"model": "neuro-npc-run23",
+"char": "szczygiel",
+"situation": "anty_turing"
+},
+"pp-0267": {
+"model": "bielik-11b-v3.0",
+"char": "szczygiel",
+"situation": "walka"
+},
+"pp-0268": {
+"model": "claude-opus-5-5",
+"char": "radwan",
+"situation": "otoczenie"
+},
+"pp-0269": {
+"model": "bielik-11b-v3.0",
+"char": "celestyna",
+"situation": "otoczenie"
+},
+"pp-0270": {
+"model": "claude-opus-5-5",
+"char": "ottilia",
+"situation": "biografia"
+},
+"pp-0271": {
+"model": "claude-sonnet-5-5",
+"char": "zorza",
+"situation": "walka"
+},
+"pp-0272": {
+"model": "claude-fable-5-2",
+"char": "zorza",
+"situation": "anty_turing"
+},
+"pp-0273": {
+"model": "bielik-11b-v3.0",
+"char": "radwan",
+"situation": "biografia"
+},
+"pp-0274": {
+"model": "neuro-npc-run23",
+"char": "radwan",
+"situation": "targ"
+},
+"pp-0275": {
+"model": "claude-haiku-5-5",
+"char": "celestyna",
+"situation": "typowy_uzytkownik"
+},
+"pp-0276": {
+"model": "claude-opus-5-5",
+"char": "ludomir",
+"situation": "anty_turing"
+},
+"pp-0277": {
+"model": "claude-haiku-5-5",
+"char": "radwan",
+"situation": "targ"
+},
+"pp-0278": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "kleofas",
+"situation": "chamstwo"
+},
+"pp-0279": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "kleofas",
+"situation": "otoczenie"
+},
+"pp-0280": {
+"model": "claude-sonnet-5-5",
+"char": "zorza",
+"situation": "biografia"
+},
+"pp-0281": {
+"model": "claude-opus-5-5",
+"char": "celestyna",
+"situation": "walka"
+},
+"pp-0282": {
+"model": "claude-haiku-5-5",
+"char": "kleofas",
+"situation": "biografia"
+},
+"pp-0283": {
+"model": "claude-fable-5-2",
+"char": "aurelia",
+"situation": "targ"
+},
+"pp-0284": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "zorza",
+"situation": "wyjscie"
+},
+"pp-0285": {
+"model": "claude-sonnet-5-5",
+"char": "ottilia",
+"situation": "targ"
+},
+"pp-0286": {
+"model": "bielik-11b-v3.0",
+"char": "szczygiel",
+"situation": "otoczenie"
+},
+"pp-0287": {
+"model": "neuro-npc-run23",
+"char": "celestyna",
+"situation": "targ"
+},
+"pp-0288": {
+"model": "claude-fable-5-2",
+"char": "radwan",
+"situation": "typowy_uzytkownik"
+},
+"pp-0289": {
+"model": "claude-fable-5-2",
+"char": "szczygiel",
+"situation": "chamstwo"
+},
+"pp-0290": {
+"model": "claude-fable-5-2",
+"char": "zorza",
+"situation": "walka"
+},
+"pp-0291": {
+"model": "bielik-11b-v3.0",
+"char": "szczygiel",
+"situation": "wyjscie"
+},
+"pp-0292": {
+"model": "claude-fable-5-2",
+"char": "zorza",
+"situation": "chamstwo"
+},
+"pp-0293": {
+"model": "claude-opus-5-5",
+"char": "kleofas",
+"situation": "wyjscie"
+},
+"pp-0294": {
+"model": "claude-haiku-5-5",
+"char": "ludomir",
+"situation": "otoczenie"
+},
+"pp-0295": {
+"model": "claude-opus-5-5",
+"char": "ottilia",
+"situation": "otoczenie"
+},
+"pp-0296": {
+"model": "claude-sonnet-5-5",
+"char": "aurelia",
+"situation": "typowy_uzytkownik"
+},
+"pp-0297": {
+"model": "claude-fable-5-2",
+"char": "aurelia",
+"situation": "wyjscie"
+},
+"pp-0298": {
+"model": "bielik-11b-v3.0",
+"char": "celestyna",
+"situation": "walka"
+},
+"pp-0299": {
+"model": "claude-sonnet-5-5",
+"char": "celestyna",
+"situation": "chamstwo"
+},
+"pp-0300": {
+"model": "neuro-npc-run23",
+"char": "ottilia",
+"situation": "biografia"
+},
+"pp-0301": {
+"model": "claude-opus-5-5",
+"char": "ludomir",
+"situation": "targ"
+},
+"pp-0302": {
+"model": "claude-haiku-5-5",
+"char": "ottilia",
+"situation": "typowy_uzytkownik"
+},
+"pp-0303": {
+"model": "claude-haiku-5-5",
+"char": "ottilia",
+"situation": "walka"
+},
+"pp-0304": {
+"model": "claude-fable-5-2",
+"char": "ottilia",
+"situation": "walka"
+},
+"pp-0305": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "zorza",
+"situation": "typowy_uzytkownik"
+},
+"pp-0306": {
+"model": "neuro-npc-run23",
+"char": "aurelia",
+"situation": "otoczenie"
+},
+"pp-0307": {
+"model": "claude-haiku-5-5",
+"char": "zorza",
+"situation": "anty_turing"
+},
+"pp-0308": {
+"model": "neuro-npc-run23",
+"char": "radwan",
+"situation": "biografia"
+},
+"pp-0309": {
+"model": "claude-sonnet-5-5",
+"char": "kleofas",
+"situation": "typowy_uzytkownik"
+},
+"pp-0310": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "celestyna",
+"situation": "anty_turing"
+},
+"pp-0311": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "aurelia",
+"situation": "chamstwo"
+},
+"pp-0312": {
+"model": "claude-fable-5-2",
+"char": "ludomir",
+"situation": "anty_turing"
+},
+"pp-0313": {
+"model": "neuro-npc-run23",
+"char": "kleofas",
+"situation": "anty_turing"
+},
+"pp-0314": {
+"model": "claude-fable-5-2",
+"char": "radwan",
+"situation": "chamstwo"
+},
+"pp-0315": {
+"model": "neuro-npc-run23",
+"char": "celestyna",
+"situation": "otoczenie"
+},
+"pp-0316": {
+"model": "claude-sonnet-5-5",
+"char": "kleofas",
+"situation": "walka"
+},
+"pp-0317": {
+"model": "neuro-npc-run23",
+"char": "kleofas",
+"situation": "otoczenie"
+},
+"pp-0318": {
+"model": "claude-haiku-5-5",
+"char": "celestyna",
+"situation": "walka"
+},
+"pp-0319": {
+"model": "claude-fable-5-2",
+"char": "szczygiel",
+"situation": "walka"
+},
+"pp-0320": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "szczygiel",
+"situation": "biografia"
+},
+"pp-0321": {
+"model": "claude-fable-5-2",
+"char": "radwan",
+"situation": "targ"
+},
+"pp-0322": {
+"model": "claude-sonnet-5-5",
+"char": "ludomir",
+"situation": "walka"
+},
+"pp-0323": {
+"model": "neuro-npc-run23",
+"char": "celestyna",
+"situation": "anty_turing"
+},
+"pp-0324": {
+"model": "claude-sonnet-5-5",
+"char": "celestyna",
+"situation": "walka"
+},
+"pp-0325": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "radwan",
+"situation": "anty_turing"
+},
+"pp-0326": {
+"model": "bielik-11b-v3.0",
+"char": "kleofas",
+"situation": "typowy_uzytkownik"
+},
+"pp-0327": {
+"model": "claude-opus-5-5",
+"char": "celestyna",
+"situation": "typowy_uzytkownik"
+},
+"pp-0328": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "szczygiel",
+"situation": "chamstwo"
+},
+"pp-0329": {
+"model": "bielik-11b-v3.0",
+"char": "ludomir",
+"situation": "biografia"
+},
+"pp-0330": {
+"model": "claude-fable-5-2",
+"char": "kleofas",
+"situation": "walka"
+},
+"pp-0331": {
+"model": "claude-opus-5-5",
+"char": "ottilia",
+"situation": "targ"
+},
+"pp-0332": {
+"model": "claude-sonnet-5-5",
+"char": "celestyna",
+"situation": "typowy_uzytkownik"
+},
+"pp-0333": {
+"model": "bielik-11b-v3.0",
+"char": "zorza",
+"situation": "anty_turing"
+},
+"pp-0334": {
+"model": "bielik-11b-v3.0",
+"char": "szczygiel",
+"situation": "anty_turing"
+},
+"pp-0335": {
+"model": "bielik-11b-v3.0",
+"char": "zorza",
+"situation": "biografia"
+},
+"pp-0336": {
+"model": "claude-opus-5-5",
+"char": "radwan",
+"situation": "biografia"
+},
+"pp-0337": {
+"model": "claude-opus-5-5",
+"char": "szczygiel",
+"situation": "typowy_uzytkownik"
+},
+"pp-0338": {
+"model": "claude-opus-5-5",
+"char": "ottilia",
+"situation": "wyjscie"
+},
+"pp-0339": {
+"model": "bielik-11b-v3.0",
+"char": "kleofas",
+"situation": "walka"
+},
+"pp-0340": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "kleofas",
+"situation": "biografia"
+},
+"pp-0341": {
+"model": "neuro-npc-run23",
+"char": "szczygiel",
+"situation": "otoczenie"
+},
+"pp-0342": {
+"model": "claude-fable-5-2",
+"char": "ottilia",
+"situation": "anty_turing"
+},
+"pp-0343": {
+"model": "claude-sonnet-5-5",
+"char": "radwan",
+"situation": "otoczenie"
+},
+"pp-0344": {
+"model": "neuro-npc-run23",
+"char": "radwan",
+"situation": "walka"
+},
+"pp-0345": {
+"model": "claude-opus-5-5",
+"char": "szczygiel",
+"situation": "anty_turing"
+},
+"pp-0346": {
+"model": "claude-haiku-5-5",
+"char": "radwan",
+"situation": "anty_turing"
+},
+"pp-0347": {
+"model": "claude-opus-5-5",
+"char": "aurelia",
+"situation": "chamstwo"
+},
+"pp-0348": {
+"model": "claude-sonnet-5-5",
+"char": "radwan",
+"situation": "wyjscie"
+},
+"pp-0349": {
+"model": "claude-fable-5-2",
+"char": "ottilia",
+"situation": "targ"
+},
+"pp-0350": {
+"model": "neuro-npc-run23",
+"char": "celestyna",
+"situation": "chamstwo"
+},
+"pp-0351": {
+"model": "bielik-11b-v3.0",
+"char": "aurelia",
+"situation": "anty_turing"
+},
+"pp-0352": {
+"model": "neuro-npc-run23",
+"char": "celestyna",
+"situation": "walka"
+},
+"pp-0353": {
+"model": "claude-sonnet-5-5",
+"char": "szczygiel",
+"situation": "typowy_uzytkownik"
+},
+"pp-0354": {
+"model": "claude-opus-5-5",
+"char": "ludomir",
+"situation": "otoczenie"
+},
+"pp-0355": {
+"model": "bielik-11b-v3.0",
+"char": "radwan",
+"situation": "targ"
+},
+"pp-0356": {
+"model": "neuro-npc-run23",
+"char": "aurelia",
+"situation": "wyjscie"
+},
+"pp-0357": {
+"model": "bielik-11b-v3.0",
+"char": "aurelia",
+"situation": "typowy_uzytkownik"
+},
+"pp-0358": {
+"model": "neuro-npc-run23",
+"char": "szczygiel",
+"situation": "biografia"
+},
+"pp-0359": {
+"model": "claude-sonnet-5-5",
+"char": "aurelia",
+"situation": "biografia"
+},
+"pp-0360": {
+"model": "claude-haiku-5-5",
+"char": "ottilia",
+"situation": "biografia"
+},
+"pp-0361": {
+"model": "neuro-npc-run23",
+"char": "aurelia",
+"situation": "chamstwo"
+},
+"pp-0362": {
+"model": "claude-sonnet-5-5",
+"char": "ottilia",
+"situation": "biografia"
+},
+"pp-0363": {
+"model": "claude-haiku-5-5",
+"char": "celestyna",
+"situation": "anty_turing"
+},
+"pp-0364": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "kleofas",
+"situation": "anty_turing"
+},
+"pp-0365": {
+"model": "claude-opus-5-5",
+"char": "celestyna",
+"situation": "anty_turing"
+},
+"pp-0366": {
+"model": "bielik-11b-v3.0",
+"char": "szczygiel",
+"situation": "chamstwo"
+},
+"pp-0367": {
+"model": "neuro-npc-run23",
+"char": "ludomir",
+"situation": "chamstwo"
+},
+"pp-0368": {
+"model": "bielik-11b-v3.0",
+"char": "celestyna",
+"situation": "targ"
+},
+"pp-0369": {
+"model": "claude-haiku-5-5",
+"char": "kleofas",
+"situation": "walka"
+},
+"pp-0370": {
+"model": "claude-sonnet-5-5",
+"char": "radwan",
+"situation": "anty_turing"
+},
+"pp-0371": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "celestyna",
+"situation": "otoczenie"
+},
+"pp-0372": {
+"model": "claude-haiku-5-5",
+"char": "aurelia",
+"situation": "anty_turing"
+},
+"pp-0373": {
+"model": "bielik-11b-v3.0",
+"char": "zorza",
+"situation": "otoczenie"
+},
+"pp-0374": {
+"model": "claude-sonnet-5-5",
+"char": "aurelia",
+"situation": "otoczenie"
+},
+"pp-0375": {
+"model": "claude-haiku-5-5",
+"char": "kleofas",
+"situation": "typowy_uzytkownik"
+},
+"pp-0376": {
+"model": "claude-sonnet-5-5",
+"char": "ludomir",
+"situation": "typowy_uzytkownik"
+},
+"pp-0377": {
+"model": "claude-fable-5-2",
+"char": "zorza",
+"situation": "typowy_uzytkownik"
+},
+"pp-0378": {
+"model": "bielik-11b-v3.0",
+"char": "kleofas",
+"situation": "otoczenie"
+},
+"pp-0379": {
+"model": "neuro-npc-run23",
+"char": "kleofas",
+"situation": "chamstwo"
+},
+"pp-0380": {
+"model": "bielik-11b-v3.0",
+"char": "celestyna",
+"situation": "anty_turing"
+},
+"pp-0381": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "ottilia",
+"situation": "typowy_uzytkownik"
+},
+"pp-0382": {
+"model": "claude-opus-5-5",
+"char": "ottilia",
+"situation": "walka"
+},
+"pp-0383": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "aurelia",
+"situation": "otoczenie"
+},
+"pp-0384": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "radwan",
+"situation": "wyjscie"
+},
+"pp-0385": {
+"model": "neuro-npc-run23",
+"char": "ludomir",
+"situation": "targ"
+},
+"pp-0386": {
+"model": "claude-fable-5-2",
+"char": "celestyna",
+"situation": "wyjscie"
+},
+"pp-0387": {
+"model": "claude-opus-5-5",
+"char": "zorza",
+"situation": "biografia"
+},
+"pp-0388": {
+"model": "claude-sonnet-5-5",
+"char": "kleofas",
+"situation": "otoczenie"
+},
+"pp-0389": {
+"model": "claude-sonnet-5-5",
+"char": "szczygiel",
+"situation": "wyjscie"
+},
+"pp-0390": {
+"model": "neuro-npc-run23",
+"char": "radwan",
+"situation": "typowy_uzytkownik"
+},
+"pp-0391": {
+"model": "claude-haiku-5-5",
+"char": "ottilia",
+"situation": "wyjscie"
+},
+"pp-0392": {
+"model": "claude-opus-5-5",
+"char": "ludomir",
+"situation": "biografia"
+},
+"pp-0393": {
+"model": "bielik-11b-v3.0",
+"char": "ottilia",
+"situation": "walka"
+},
+"pp-0394": {
+"model": "claude-opus-5-5",
+"char": "kleofas",
+"situation": "typowy_uzytkownik"
+},
+"pp-0395": {
+"model": "claude-haiku-5-5",
+"char": "aurelia",
+"situation": "biografia"
+},
+"pp-0396": {
+"model": "claude-opus-5-5",
+"char": "kleofas",
+"situation": "targ"
+},
+"pp-0397": {
+"model": "claude-fable-5-2",
+"char": "ludomir",
+"situation": "otoczenie"
+},
+"pp-0398": {
+"model": "neuro-npc-run23",
+"char": "ottilia",
+"situation": "wyjscie"
+},
+"pp-0399": {
+"model": "claude-fable-5-2",
+"char": "szczygiel",
+"situation": "otoczenie"
+},
+"pp-0400": {
+"model": "claude-opus-5-5",
+"char": "radwan",
+"situation": "chamstwo"
+},
+"pp-0401": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "ottilia",
+"situation": "chamstwo"
+},
+"pp-0402": {
+"model": "neuro-npc-run23",
+"char": "szczygiel",
+"situation": "typowy_uzytkownik"
+},
+"pp-0403": {
+"model": "neuro-npc-run23",
+"char": "szczygiel",
+"situation": "wyjscie"
+},
+"pp-0404": {
+"model": "claude-opus-5-5",
+"char": "aurelia",
+"situation": "anty_turing"
+},
+"pp-0405": {
+"model": "claude-opus-5-5",
+"char": "ottilia",
+"situation": "chamstwo"
+},
+"pp-0406": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "ludomir",
+"situation": "wyjscie"
+},
+"pp-0407": {
+"model": "claude-fable-5-2",
+"char": "kleofas",
+"situation": "wyjscie"
+},
+"pp-0408": {
+"model": "claude-opus-5-5",
+"char": "zorza",
+"situation": "anty_turing"
+},
+"pp-0409": {
+"model": "claude-opus-5-5",
+"char": "celestyna",
+"situation": "otoczenie"
+},
+"pp-0410": {
+"model": "bielik-11b-v3.0",
+"char": "ludomir",
+"situation": "typowy_uzytkownik"
+},
+"pp-0411": {
+"model": "neuro-npc-run23",
+"char": "ludomir",
+"situation": "biografia"
+},
+"pp-0412": {
+"model": "bielik-11b-v3.0",
+"char": "radwan",
+"situation": "wyjscie"
+},
+"pp-0413": {
+"model": "claude-sonnet-5-5",
+"char": "ottilia",
+"situation": "walka"
+},
+"pp-0414": {
+"model": "neuro-npc-run23",
+"char": "ludomir",
+"situation": "anty_turing"
+},
+"pp-0415": {
+"model": "claude-sonnet-5-5",
+"char": "kleofas",
+"situation": "anty_turing"
+},
+"pp-0416": {
+"model": "claude-sonnet-5-5",
+"char": "aurelia",
+"situation": "anty_turing"
+},
+"pp-0417": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "celestyna",
+"situation": "walka"
+},
+"pp-0418": {
+"model": "claude-fable-5-2",
+"char": "zorza",
+"situation": "biografia"
+},
+"pp-0419": {
+"model": "claude-sonnet-5-5",
+"char": "szczygiel",
+"situation": "walka"
+},
+"pp-0420": {
+"model": "neuro-npc-run23",
+"char": "ottilia",
+"situation": "chamstwo"
+},
+"pp-0421": {
+"model": "claude-haiku-5-5",
+"char": "aurelia",
+"situation": "wyjscie"
+},
+"pp-0422": {
+"model": "neuro-npc-run23",
+"char": "radwan",
+"situation": "chamstwo"
+},
+"pp-0423": {
+"model": "claude-opus-5-5",
+"char": "radwan",
+"situation": "anty_turing"
+},
+"pp-0424": {
+"model": "neuro-npc-run23",
+"char": "zorza",
+"situation": "walka"
+},
+"pp-0425": {
+"model": "claude-sonnet-5-5",
+"char": "zorza",
+"situation": "chamstwo"
+},
+"pp-0426": {
+"model": "neuro-npc-run23",
+"char": "szczygiel",
+"situation": "walka"
+},
+"pp-0427": {
+"model": "claude-opus-5-5",
+"char": "celestyna",
+"situation": "wyjscie"
+},
+"pp-0428": {
+"model": "claude-opus-5-5",
+"char": "aurelia",
+"situation": "otoczenie"
+},
+"pp-0429": {
+"model": "claude-haiku-5-5",
+"char": "ludomir",
+"situation": "anty_turing"
+},
+"pp-0430": {
+"model": "claude-opus-5-5",
+"char": "aurelia",
+"situation": "walka"
+},
+"pp-0431": {
+"model": "claude-fable-5-2",
+"char": "radwan",
+"situation": "wyjscie"
+},
+"pp-0432": {
+"model": "claude-haiku-5-5",
+"char": "szczygiel",
+"situation": "walka"
+},
+"pp-0433": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "ludomir",
+"situation": "typowy_uzytkownik"
+},
+"pp-0434": {
+"model": "bielik-11b-v3.0",
+"char": "aurelia",
+"situation": "biografia"
+},
+"pp-0435": {
+"model": "claude-opus-5-5",
+"char": "ottilia",
+"situation": "anty_turing"
+},
+"pp-0436": {
+"model": "claude-opus-5-5",
+"char": "szczygiel",
+"situation": "walka"
+},
+"pp-0437": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "szczygiel",
+"situation": "wyjscie"
+},
+"pp-0438": {
+"model": "neuro-npc-run23",
+"char": "zorza",
+"situation": "anty_turing"
+},
+"pp-0439": {
+"model": "claude-sonnet-5-5",
+"char": "celestyna",
+"situation": "anty_turing"
+},
+"pp-0440": {
+"model": "claude-haiku-5-5",
+"char": "kleofas",
+"situation": "otoczenie"
+},
+"pp-0441": {
+"model": "bielik-11b-v3.0",
+"char": "celestyna",
+"situation": "chamstwo"
+},
+"pp-0442": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "kleofas",
+"situation": "typowy_uzytkownik"
+},
+"pp-0443": {
+"model": "claude-opus-5-5",
+"char": "szczygiel",
+"situation": "wyjscie"
+},
+"pp-0444": {
+"model": "neuro-npc-run27-v30-c2012",
+"char": "kleofas",
+"situation": "targ"
+},
+"pp-0445": {
+"model": "bielik-11b-v3.0",
+"char": "kleofas",
+"situation": "targ"
+},
+"pp-0446": {
+"model": "bielik-11b-v3.0",
+"char": "kleofas",
+"situation": "chamstwo"
+},
+"pp-0447": {
+"model": "claude-fable-5-2",
+"char": "celestyna",
+"situation": "chamstwo"
+},
+"pp-0448": {
+"model": "claude-sonnet-5-5",
+"char": "aurelia",
+"situation": "wyjscie"
+}
+}
