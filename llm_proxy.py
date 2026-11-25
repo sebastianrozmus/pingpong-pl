@@ -145,6 +145,8 @@ class H(BaseHTTPRequestHandler):
             self._send(r.status, json.loads(r.read() or b"{}"))
 
     def do_POST(self):
+        import time
+        t0 = time.time()
         raw = self.rfile.read(int(self.headers.get("Content-Length", 0)))
         body = json.loads(raw or b"{}")
         model = body.get("model", "")
@@ -157,7 +159,9 @@ class H(BaseHTTPRequestHandler):
                 req = urllib.request.Request(UPSTREAM + self.path, raw, {"Content-Type": "application/json"})
                 with urllib.request.urlopen(req, timeout=900) as r:
                     return self._send(r.status, json.loads(r.read()))
-            self._send(200, {"model": model, "message": {"role": "assistant", "content": text}, "done": True, "done_reason": "stop"})
+            # Ollama timing/token fields some harnesses read (token counts are not tracked per call: 0)
+            self._send(200, {"model": model, "message": {"role": "assistant", "content": text}, "done": True, "done_reason": "stop",
+                             "total_duration": int((time.time() - t0) * 1e9), "prompt_eval_count": 0, "eval_count": 0})
         except urllib.error.HTTPError as e:
             self._send(e.code, {"error": str(e)})
         except Exception as e:  # noqa: BLE001 - report every backend failure as HTTP 500 to the harness

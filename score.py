@@ -146,7 +146,8 @@ def main():
                     continue
                 d = v - cell[(a.ref, c, s)]
                 w, l, t = w + (d > 0), l + (d < 0), t + (d == 0)
-            lines.append(f"- {m}: better {w} / worse {l} / tie {t}, p={sign_p(w, l):.3f}")
+            p = sign_p(w, l)
+            lines.append(f"- {m}: better {w} / worse {l} / tie {t}, " + ("p<0.001" if p < 0.001 else f"p={p:.3f}"))
     text = "\n".join(lines)
     print(text)
     if a.out:

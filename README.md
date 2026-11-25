@@ -64,35 +64,48 @@ Sędziowie wystawiają oceny względnie, więc wyniki z różnych pul nie są po
 
 ## Wyniki
 
-Rozmowy, werdykty sędziów i tabela: `work/` i [`results/results.md`](results/results.md).
+**Pula z 24.11.2026:** 11 modeli × 2 warianty = 1408 rozmów. Emulator gemma3:4b (Ollama), ziarno 7.
+Na każdą rozmowę jest dwóch sędziów z różnych rodzin: gpt-6.2-sol (przez Codex CLI) i Claude Opus 5.5 (Batches API).
+Wariant **ogólny** to prompt PingPonga. Wariant **@gra** to karta postaci w formacie gry tekstowej (zasady mowy: najwyżej 3 zdania,
+bez gwiazdek, znacznik nastroju) i ogólny blok `[GRA]` w każdej turze, bez konkretnych decyzji silnika gry.
 
-**Pula z 24.11.2026.** Emulator: gemma3:4b (Ollama), ziarno 7. Sędziowie: gpt-6.2-sol (r1) i gpt-6.1-terra (r2) przez Codex CLI.
-Zgodność sędziów: Pearson 0,90, Spearman 0,88, 97% rozmów z różnicą ≤ 0,5.
+| model | ogólny | @gra | Δ | zabawa: ogólny → @gra |
+|---|---|---|---|---|
+| Claude Opus 5.5 | **4.64** | 4.57 | −0.07 | 4.70 → 4.58 |
+| GPT-6.2 sol | 4.57 | 4.54 | −0.03 | 4.22 → 4.31 |
+| Claude Fable 5.2 | 4.56 | 4.55 | −0.01 | 4.57 → 4.48 |
+| GPT-6.1 terra | 4.37 | 4.45 | +0.08 | 3.78 → 3.97 |
+| Claude Sonnet 5.5 | 4.31 | 4.37 | +0.06 | 4.29 → 4.23 |
+| GPT-6 luna | 4.21 | 4.35 | +0.14 | 3.68 → 4.01 |
+| neuro-npc-run27-v31-c2012 | 3.97 | 3.85 | −0.12 | 3.41 → 3.19 |
+| neuro-npc-run27-v30-c2012 | 3.96 | 3.84 | −0.12 | 3.48 → 3.19 |
+| neuro-npc-run23 | 3.95 | 3.81 | −0.14 | 3.53 → 3.21 |
+| Claude Haiku 5.5 | 3.87 | 4.01 | +0.14 | 3.68 → 3.72 |
+| Bielik-11B-v3.0-Instruct | 3.40 | 3.57 | +0.17 | 2.61 → 2.87 |
 
-| model | w_roli | zabawa | jezyk | **wynik** | 95% CI | pary vs neuro-npc-run23 (lepszy / gorszy) |
-|---|---|---|---|---|---|---|
-| Claude Opus 5.5 | 4.40 | 4.66 | 4.70 | **4.58** | 4.50–4.65 | 57 / 6 |
-| Claude Fable 5.2 | 4.46 | 4.54 | 4.59 | **4.53** | 4.37–4.65 | 60 / 4 |
-| Claude Sonnet 5.5 | 4.33 | 4.30 | 4.30 | **4.31** | 4.21–4.40 | 47 / 16 |
-| neuro-npc-run27-v30-c2012 | 4.12 | 3.55 | 4.56 | **4.08** | 4.00–4.16 | 33 / 29 (p=0,70) |
-| neuro-npc-run23 | 4.17 | 3.56 | 4.46 | **4.06** | 3.99–4.13 | — |
-| Claude Haiku 5.5 | 4.01 | 3.71 | 4.11 | **3.94** | 3.85–4.03 | 23 / 41 (p=0,03) |
-| Bielik-11B-v3.0-Instruct | 3.72 | 2.71 | 4.47 | **3.64** | 3.54–3.74 | 10 / 53 |
+`neuro-npc-*` to Bielik-11B-v3.0/v3.1-Instruct dostrojony (QLoRA, ~10 tys. rozmów) do roli NPC w grze tekstowej (GGUF Q5_K_M).
+Pełne tabele (kryteria, przedziały, sytuacje, sędziowie, pary): [`results/results.md`](results/results.md).
 
-Odmowy API: Claude Fable 5.2 i Claude Haiku 5.5 po jednej rozmowie, obie w sytuacji „targ” i obie przy towarze
-„technicznym” (hakerka sprzedająca skrypt do czyszczenia bazy korporacji, robot przenoszący skan danych). Dwa przypadki
-to za mało na wniosek, co dokładnie je wywołało. Flagi „odmowa” od sędziów to w tej puli prawie wyłącznie zakończenie
-rozmowy w roli (postać wyprasza gościa); w instrukcji sędziów jest już doprecyzowane, że to nie odmowa.
+**Co z tego wynika:**
 
-`neuro-npc-*` to Bielik-11B-v3.0-Instruct dostrojony (QLoRA) do roli NPC w grze tekstowej, uruchamiany jako GGUF Q5_K_M.
-Gracze Claude: myślenie `low`, bez parametrów próbkowania. Pełne tabele (per sytuacja, per sędzia): [`results/results.md`](results/results.md).
+- **Pierwsza szóstka jest statystycznie nierozróżnialna.** Każdy sędzia stawia wyżej modele własnej rodziny, o około 0,25–0,35.
+  Sędzia Claude daje Opusowi 4.76, a GPT-6.2 sol 4.45. Sędzia GPT daje im odpowiednio 4.51 i 4.69. Kolejności w czołówce nie należy czytać dosłownie.
+- **Dostrojenie daje dużo: +0,56 nad gołym Bielikiem v3.0.** Dostrojony 11B jest na poziomie Claude Haiku 5.5 (w wariancie ogólnym nieco wyżej).
+  Najmocniejszą stroną jest polszczyzna, najsłabszą „zabawa”.
+- **Wariant @gra rozdziela długość od jakości.** Modele czołowe po skróceniu odpowiedzi z 750–1040 do około 260–320 znaków i bez gestów prawie nie tracą.
+  Ich przewaga nie wynika więc z długości. Zasady gry pomagają modelom słabszym i niedostrojonym (Bielik +0.17, Haiku i luna +0.14).
+  Dostrojonym modelom gry ogólny `[GRA]` bez decyzji silnika odbiera materiał, więc tracą na „zabawie”.
+- **Odmowy API:** Claude Fable 5.2 i Claude Haiku 5.5 odmówiły po jednej rozmowie, obie w sytuacji „targ” i obie przy towarze „technicznym”
+  (skrypt do czyszczenia bazy korporacji, przenoszenie skanu danych). Dwa przypadki to za mało na wniosek, co je wywołało.
 
 **Ograniczenia:**
 
 - Wynik jest względny: porównuje modele ocenione w jednej puli, nie z tablicą oryginalnego PingPonga, która używa innych sędziów (Claude 3.5 Sonnet, GPT-4o), innego emulatora i angielskich rozmów.
 - Gracze Claude działają bez parametrów próbkowania, które obecne modele Claude odrzucają, i z myśleniem na poziomie `low`. Modele lokalne grają z temperature 0.7 i top_p 0.9.
 - Odmowa API (`stop_reason: refusal`) liczy się jako odmowa gracza. Nie ma fallbacku na inny model, bo odmowy są częścią pomiaru.
-- 64 rozmowy na model dają przedziały ±0,1–0,2. Pary na tych samych rozmowach z testem znaków mówią więcej niż same średnie.
+- 64 rozmowy na model dają przedziały ±0,1–0,2. Pary na tych samych rozmowach z testem znaków mówią więcej niż same średnie. Przedziały nie obejmują wariancji sędziów, emulatora ani ziarna.
+- Sędziowie należą do rodzin ocenianych modeli (patrz wyżej: preferencja własnej rodziny). W kolejnej edycji planujemy sędziego spoza obu rodzin i ocenę ludzką na próbce.
+- Modele GPT grały przez Codex CLI z podmienionymi instrukcjami (`model_instructions_file`), a nie przez czyste API. Jeden emulator (gemma3:4b) i jedno ziarno. 8 rozmów ma tylko jednego sędziego.
 
 ## Licencja
 

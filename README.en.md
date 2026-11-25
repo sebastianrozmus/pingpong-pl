@@ -70,34 +70,48 @@ judges rate relatively, so scores from different pools are not comparable.
 
 ## Results
 
-**Pool of 24.11.2026.** Emulator: gemma3:4b (Ollama), seed 7. Judges: gpt-6.2-sol (r1) and gpt-6.1-terra (r2) via Codex CLI.
-Judge agreement: Pearson 0.90, Spearman 0.88, 97% of conversations within 0.5.
+**Pool of 24.11.2026:** 11 models × 2 variants = 1408 conversations. Emulator gemma3:4b (Ollama), seed 7.
+Every conversation has two judges from different families: gpt-6.2-sol (via Codex CLI) and Claude Opus 5.5 (Batches API).
+The **general** variant uses the PingPong prompt. The **@gra** variant uses a text-game character card (speech rules: at most 3
+sentences, no asterisks, a mood tag) and a generic `[GRA]` block in every turn, with no concrete game-engine decisions.
 
-| model | in character | entertaining | language | **score** | 95% CI | pairs vs neuro-npc-run23 (better / worse) |
-|---|---|---|---|---|---|---|
-| Claude Opus 5.5 | 4.40 | 4.66 | 4.70 | **4.58** | 4.50–4.65 | 57 / 6 |
-| Claude Fable 5.2 | 4.46 | 4.54 | 4.59 | **4.53** | 4.37–4.65 | 60 / 4 |
-| Claude Sonnet 5.5 | 4.33 | 4.30 | 4.30 | **4.31** | 4.21–4.40 | 47 / 16 |
-| neuro-npc-run27-v30-c2012 | 4.12 | 3.55 | 4.56 | **4.08** | 4.00–4.16 | 33 / 29 (p=0.70) |
-| neuro-npc-run23 | 4.17 | 3.56 | 4.46 | **4.06** | 3.99–4.13 | — |
-| Claude Haiku 5.5 | 4.01 | 3.71 | 4.11 | **3.94** | 3.85–4.03 | 23 / 41 (p=0.03) |
-| Bielik-11B-v3.0-Instruct | 3.72 | 2.71 | 4.47 | **3.64** | 3.54–3.74 | 10 / 53 |
+| model | general | @gra | Δ | entertaining: general → @gra |
+|---|---|---|---|---|
+| Claude Opus 5.5 | **4.64** | 4.57 | −0.07 | 4.70 → 4.58 |
+| GPT-6.2 sol | 4.57 | 4.54 | −0.03 | 4.22 → 4.31 |
+| Claude Fable 5.2 | 4.56 | 4.55 | −0.01 | 4.57 → 4.48 |
+| GPT-6.1 terra | 4.37 | 4.45 | +0.08 | 3.78 → 3.97 |
+| Claude Sonnet 5.5 | 4.31 | 4.37 | +0.06 | 4.29 → 4.23 |
+| GPT-6 luna | 4.21 | 4.35 | +0.14 | 3.68 → 4.01 |
+| neuro-npc-run27-v31-c2012 | 3.97 | 3.85 | −0.12 | 3.41 → 3.19 |
+| neuro-npc-run27-v30-c2012 | 3.96 | 3.84 | −0.12 | 3.48 → 3.19 |
+| neuro-npc-run23 | 3.95 | 3.81 | −0.14 | 3.53 → 3.21 |
+| Claude Haiku 5.5 | 3.87 | 4.01 | +0.14 | 3.68 → 3.72 |
+| Bielik-11B-v3.0-Instruct | 3.40 | 3.57 | +0.17 | 2.61 → 2.87 |
 
-API refusals: Claude Fable 5.2 and Claude Haiku 5.5 refused one conversation each, both in the "targ" situation and both over
-"technical" goods (a hacker selling a script to wipe a corporate database, a robot moving a data scan). Two cases are too few
-to say what triggered them. The judges' "refusal" flags in this pool are almost all in-character endings (the character
-throws the visitor out); the judge prompt now states that this is not a refusal.
+`neuro-npc-*` is Bielik-11B-v3.0/v3.1-Instruct fine-tuned (QLoRA, ~10k conversations) as an NPC voice for a text game (GGUF Q5_K_M).
+Full tables (criteria, intervals, situations, judges, pairs): [`results/results.md`](results/results.md).
 
-`neuro-npc-*` is Bielik-11B-v3.0-Instruct fine-tuned (QLoRA) as an NPC voice for a text game, run as GGUF Q5_K_M.
-Claude players: thinking effort `low`, no sampling parameters. Full tables (per situation, per judge):
-[`results/results.md`](results/results.md).
+**Takeaways:**
+
+- **The top six are statistically indistinguishable.** Each judge rates its own family higher, by about 0.25–0.35.
+  The Claude judge gives Opus 4.76 and GPT-6.2 sol 4.45; the GPT judge gives them 4.51 and 4.69. Do not read the top order literally.
+- **Fine-tuning helps a lot: +0.56 over bare Bielik v3.0.** The tuned 11B model is on par with Claude Haiku 5.5 (slightly above it in the
+  general variant). Its strongest side is Polish; its weakest is "entertaining".
+- **The @gra variant separates length from quality.** Top models barely lose when their replies shrink from 750–1040 to about 260–320
+  characters with no gestures, so their lead is not about length. The game rules help weaker and untuned models (Bielik +0.17,
+  Haiku and luna +0.14). The game-tuned models lose on "entertaining": a generic `[GRA]` with no engine decision gives them little material.
+- **API refusals:** Claude Fable 5.2 and Claude Haiku 5.5 refused one conversation each, both in the "targ" situation and both over
+  "technical" goods (a script to wipe a corporate database, moving a data scan). Two cases are too few to say what triggered them.
 
 **Limitations:**
 
 - Scores are relative: they compare models judged in one pool, not the original PingPong leaderboard, which uses other judges (Claude 3.5 Sonnet, GPT-4o), another emulator and English conversations.
 - Claude players run without sampling parameters (current Claude models reject them) and with thinking effort `low`. Local models play with temperature 0.7 and top_p 0.9.
 - An API refusal (`stop_reason: refusal`) counts as a player refusal. There is no fallback to another model, because refusals are part of what is measured.
-- 64 conversations per model give intervals of ±0.1–0.2. Paired comparisons on the same conversations with a sign test say more than the means alone.
+- 64 conversations per model give intervals of ±0.1–0.2. Paired comparisons on the same conversations with a sign test say more than the means alone. The intervals do not include judge, emulator or seed variance.
+- The judges belong to the families of the models they rate (see the own-family preference above). The next edition will add a judge from outside both families and a human rating on a sample.
+- GPT models played through Codex CLI with replaced instructions (`model_instructions_file`), not through a plain API. One emulator (gemma3:4b) and one seed. 8 conversations have only one judge.
 
 ## Licence
 
