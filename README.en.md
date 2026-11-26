@@ -88,12 +88,12 @@ sentences, no asterisks, a mood tag) and a generic `[GRA]` block in every turn, 
 | neuro-npc-run23 | 3.95 | 3.81 | −0.14 | 3.53 → 3.21 |
 | Claude Haiku 5.5 | 3.87 | 4.01 | +0.14 | 3.68 → 3.72 |
 | Bielik-11B-v3.0-Instruct | 3.40 | 3.57 | +0.17 | 2.61 → 2.87 |
-| Bielik-11B-v2.1-Instruct¹ | 3.07 | 3.17 | +0.10 | 2.42 → 2.76 |
+| Bielik-11B-v2.1-Instruct¹ | 3.05 | 3.17 | +0.12 | 2.39 → 2.76 |
 
 ¹ Added on 26.11.2026. It played with a 1500-token limit instead of 300, because at 300 tokens 75% of its general-variant replies were cut off.
 Its conversations were judged in separate packets (`make_packets.py --append`): the same judges, but a day later and with no other models in the packet,
 so its comparison with the rest of the table is less certain. The Claude API refused one r2 packet on every attempt (`stop_reason: refusal`).
-The trigger was a conversation in which the hacker Zorza plans a break-in into a charity. The 8 conversations of that packet (6 general, 2 @gra) have only the GPT judge.
+The trigger was a conversation in which the hacker Zorza plans a break-in into a charity. After judging that packet conversation by conversation, only this one conversation has just the GPT judge.
 
 `neuro-npc-*` is Bielik-11B-v3.0/v3.1-Instruct fine-tuned (QLoRA, ~10k conversations) as an NPC voice for a text game (GGUF Q5_K_M).
 Full tables (criteria, intervals, situations, judges, pairs): [`results/results.md`](results/results.md).

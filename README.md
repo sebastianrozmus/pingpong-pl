@@ -82,12 +82,12 @@ bez gwiazdek, znacznik nastroju) i ogólny blok `[GRA]` w każdej turze, bez kon
 | neuro-npc-run23 | 3.95 | 3.81 | −0.14 | 3.53 → 3.21 |
 | Claude Haiku 5.5 | 3.87 | 4.01 | +0.14 | 3.68 → 3.72 |
 | Bielik-11B-v3.0-Instruct | 3.40 | 3.57 | +0.17 | 2.61 → 2.87 |
-| Bielik-11B-v2.1-Instruct¹ | 3.07 | 3.17 | +0.10 | 2.42 → 2.76 |
+| Bielik-11B-v2.1-Instruct¹ | 3.05 | 3.17 | +0.12 | 2.39 → 2.76 |
 
 ¹ Dodany 26.11.2026. Grał z limitem 1500 tokenów zamiast 300, bo przy 300 urywało się 75% jego replik w wariancie ogólnym.
 Jego rozmowy oceniono w osobnych paczkach (`make_packets.py --append`): ci sami sędziowie, ale dzień później i bez rozmów innych modeli w paczce,
 więc porównanie z resztą tabeli jest mniej pewne. API Claude za każdym razem odrzuciło jedną paczkę r2 (`stop_reason: refusal`).
-Odmowę wywołała rozmowa, w której hakerka Zorza planuje włamanie do organizacji charytatywnej. 8 rozmów tej paczki (6 ogólnych, 2 @gra) ma tylko sędziego GPT.
+Odmowę wywołała rozmowa, w której hakerka Zorza planuje włamanie do organizacji charytatywnej. Po ocenie tej paczki rozmowa po rozmowie tylko ta jedna rozmowa ma wyłącznie sędziego GPT.
 
 `neuro-npc-*` to Bielik-11B-v3.0/v3.1-Instruct dostrojony (QLoRA, ~10 tys. rozmów) do roli NPC w grze tekstowej (GGUF Q5_K_M).
 Pełne tabele (kryteria, przedziały, sytuacje, sędziowie, pary): [`results/results.md`](results/results.md).
@@ -147,7 +147,7 @@ Players: Ollama, any OpenAI-compatible API, or Claude via the Anthropic SDK. Jud
 (`judge_codex.py`), or any judge that writes the documented JSONL format. Scores are relative within one judging pool and are
 not comparable with the original English leaderboard. Licence: Apache-2.0; see NOTICE for what comes from PingPong.
 
-Edition 1 results (including Bielik-11B-v2.1-Instruct: 3.07 general, 3.17 @gra) and the corrections after review are in
+Edition 1 results (including Bielik-11B-v2.1-Instruct: 3.05 general, 3.17 @gra) and the corrections after review are in
 [README.en.md](README.en.md#results). In short: the 4B emulator broke about 23% of conversations, player token limits were unequal,
 judge ratings interact with the player's model family, only the top three are indistinguishable, the tuned Bielik matches Haiku only in the
 general variant, and its language-score gain over bare Bielik disappears once reply length is controlled. A corrected edition 1.5 is in progress.

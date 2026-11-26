@@ -8,6 +8,7 @@ import argparse
 import glob
 import json
 import os
+import re
 import time
 
 from judge_codex import expected, parse
@@ -76,14 +77,37 @@ def main():
         failed.append(res.custom_id)
     for cid in failed:   # retry with plain requests
         out, text, exp = todo[cid]
+        refused = False
         for _ in range(2):
             msg = c.messages.create(**params(a.model, a.effort, system, text))
             verdicts, missing = parse("".join(b.text for b in msg.content if b.type == "text"), exp)
             if not missing:
                 save(out, verdicts, a.model)
                 break
+            if msg.stop_reason == "refusal":
+                refused = True
+                break
         else:
-            print("FAILED", cid, flush=True)
+            refused = True
+        if refused or missing:
+            # one conversation can block the whole packet (API refusal): judge conversations one by one,
+            # keep the verdicts that succeed so only the offending conversation lacks this judge
+            parts = re.split(r"(?m)^(?==== pp-\d+)", text)
+            got = []
+            for part in (p for p in parts if p.strip().startswith("=== pp-")):
+                pexp = expected(part)
+                msg = None
+                try:
+                    msg = c.messages.create(**params(a.model, a.effort, system, part))
+                    v, miss = parse("".join(b.text for b in msg.content if b.type == "text"), pexp)
+                except Exception as e:   # noqa: BLE001
+                    v, miss = [], [str(e)]
+                if miss:
+                    print("FAILED", cid, list(pexp), getattr(msg, "stop_reason", "?"), flush=True)
+                got += v
+            if got:
+                save(out, got, a.model)
+            print(f"{cid}: split, {len(got)}/{len(exp)} conversations judged", flush=True)
     print(f"{a.round}: done, retried {len(failed)}", flush=True)
 
 
