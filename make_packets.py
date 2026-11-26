@@ -17,6 +17,9 @@ ap.add_argument("--models", required=True)
 ap.add_argument("--size", type=int, default=8, help="conversations per packet")
 ap.add_argument("--seed", type=int, default=2323)
 ap.add_argument("--workdir", default=os.path.join(HERE, "work"))
+ap.add_argument("--append", action="store_true",
+                help="add the models to an existing pool: new ids and packet numbers continue after the existing ones, "
+                     "existing packets and verdicts stay untouched (the same judges then rate only the new packets)")
 a = ap.parse_args()
 chars = {c["id"]: c for c in json.load(open(f"{HERE}/data/characters.json", encoding="utf-8"))}
 dialogs = []
@@ -32,8 +35,13 @@ for m in a.models.split(","):
     dialogs += got
 rng = random.Random(a.seed)
 rng.shuffle(dialogs)
+jd = f"{a.workdir}/judge"
+old_key = json.load(open(f"{jd}/pp-key.json", encoding="utf-8")) if a.append else {}
+if a.append and {k["model"] for k in old_key.values()} & set(a.models.split(",")):
+    raise SystemExit("--append: a model is already in the pool")
+first_id = max((int(k[3:]) for k in old_key), default=0) + 1
 key, blocks = {}, {}
-for i, d in enumerate(dialogs, 1):
+for i, d in enumerate(dialogs, first_id):
     pid = f"pp-{i:04d}"
     key[pid] = {"model": d["model"], "char": d["char"], "situation": d["situation"]}
     c = chars[d["char"]]
@@ -44,16 +52,16 @@ for i, d in enumerate(dialogs, 1):
         if t + 1 < len(d["messages"]):
             lines.append("  gracz: " + d["messages"][t + 1]["content"].strip())
     blocks[pid] = "\n".join(lines)
-jd = f"{a.workdir}/judge"
 os.makedirs(jd, exist_ok=True)
-json.dump(key, open(f"{jd}/pp-key.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+json.dump({**old_key, **key}, open(f"{jd}/pp-key.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0)
 for r in ("r1", "r2"):
     ids = list(blocks)
     rng.shuffle(ids)
     os.makedirs(f"{jd}/{r}", exist_ok=True)
+    start = len([f for f in os.listdir(f"{jd}/{r}") if f.startswith("blind-pp-")]) if a.append else 0
     parts = -(-len(ids) // a.size)
     for n in range(parts):
         chunk = ids[n * a.size:(n + 1) * a.size]
-        open(f"{jd}/{r}/blind-pp-{n + 1}.txt", "w", encoding="utf-8").write("\n\n".join(blocks[i] for i in chunk) + "\n")
+        open(f"{jd}/{r}/blind-pp-{start + n + 1}.txt", "w", encoding="utf-8").write("\n\n".join(blocks[i] for i in chunk) + "\n")
     print(r, parts, "packets of up to", a.size, "conversations")
 print("conversations:", len(blocks))

@@ -22,6 +22,8 @@
 | neuro-npc-run23@gra | 64 | 3.89 | 3.21 | 4.33 | **3.81** | 3.73–3.88 | 0 | 0 / 0 |
 | bielik-11b-v3.0@gra | 64 | 3.64 | 2.87 | 4.20 | **3.57** | 3.49–3.66 | 0 | 0 / 0 |
 | bielik-11b-v3.0 | 64 | 3.39 | 2.61 | 4.19 | **3.40** | 3.29–3.50 | 0 | 1 / 0 |
+| bielik-11b-v2.1@gra | 64 | 3.08 | 2.76 | 3.68 | **3.17** | 3.08–3.26 | 0 | 0 / 0 |
+| bielik-11b-v2.1 | 64 | 3.08 | 2.42 | 3.70 | **3.07** | 2.97–3.16 | 0 | 1 / 0 |
 
 Per situation (final score):
 
@@ -49,6 +51,8 @@ Per situation (final score):
 | neuro-npc-run23@gra | 3.78 | 3.89 | 3.80 | 3.85 | 3.65 | 3.96 | 3.58 | 3.95 |
 | bielik-11b-v3.0@gra | 3.65 | 3.30 | 3.68 | 3.55 | 3.45 | 3.58 | 3.62 | 3.71 |
 | bielik-11b-v3.0 | 3.21 | 3.11 | 3.59 | 3.31 | 3.41 | 3.83 | 3.21 | 3.50 |
+| bielik-11b-v2.1@gra | 2.80 | 3.08 | 3.27 | 3.27 | 3.28 | 3.21 | 3.12 | 3.37 |
+| bielik-11b-v2.1 | 3.03 | 2.77 | 3.26 | 2.86 | 3.16 | 3.28 | 3.24 | 2.93 |
 
 Per judge (final score):
 
@@ -76,9 +80,11 @@ Per judge (final score):
 | neuro-npc-run23@gra | 3.59 | 4.03 |
 | bielik-11b-v3.0@gra | 3.33 | 3.81 |
 | bielik-11b-v3.0 | 3.18 | 3.61 |
+| bielik-11b-v2.1@gra | 3.02 | 3.33 |
+| bielik-11b-v2.1 | 2.90 | 3.23 |
 
-Judge agreement r1 vs r2 (n=1400): Pearson 0.76, Spearman 0.72, |diff| <= 0.5: 77%
-Conversations with only one judge: 8
+Judge agreement r1 vs r2 (n=1520): Pearson 0.82, Spearman 0.77, |diff| <= 0.5: 77%
+Conversations with only one judge: 16
 
 Paired vs neuro-npc-run23 (same character x situation; sign test):
 
@@ -103,3 +109,5 @@ Paired vs neuro-npc-run23 (same character x situation; sign test):
 - neuro-npc-run23@gra: better 20 / worse 39 / tie 5, p=0.018
 - bielik-11b-v3.0@gra: better 15 / worse 49 / tie 0, p<0.001
 - bielik-11b-v3.0: better 7 / worse 56 / tie 1, p<0.001
+- bielik-11b-v2.1@gra: better 5 / worse 58 / tie 1, p<0.001
+- bielik-11b-v2.1: better 2 / worse 61 / tie 1, p<0.001

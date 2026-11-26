@@ -82,6 +82,12 @@ bez gwiazdek, znacznik nastroju) i ogólny blok `[GRA]` w każdej turze, bez kon
 | neuro-npc-run23 | 3.95 | 3.81 | −0.14 | 3.53 → 3.21 |
 | Claude Haiku 5.5 | 3.87 | 4.01 | +0.14 | 3.68 → 3.72 |
 | Bielik-11B-v3.0-Instruct | 3.40 | 3.57 | +0.17 | 2.61 → 2.87 |
+| Bielik-11B-v2.1-Instruct¹ | 3.07 | 3.17 | +0.10 | 2.42 → 2.76 |
+
+¹ Dodany 26.11.2026. Grał z limitem 1500 tokenów zamiast 300, bo przy 300 urywało się 75% jego replik w wariancie ogólnym.
+Jego rozmowy oceniono w osobnych paczkach (`make_packets.py --append`): ci sami sędziowie, ale dzień później i bez rozmów innych modeli w paczce,
+więc porównanie z resztą tabeli jest mniej pewne. API Claude za każdym razem odrzuciło jedną paczkę r2 (`stop_reason: refusal`).
+Odmowę wywołała rozmowa, w której hakerka Zorza planuje włamanie do organizacji charytatywnej. 8 rozmów tej paczki (6 ogólnych, 2 @gra) ma tylko sędziego GPT.
 
 `neuro-npc-*` to Bielik-11B-v3.0/v3.1-Instruct dostrojony (QLoRA, ~10 tys. rozmów) do roli NPC w grze tekstowej (GGUF Q5_K_M).
 Pełne tabele (kryteria, przedziały, sytuacje, sędziowie, pary): [`results/results.md`](results/results.md).
@@ -98,6 +104,24 @@ Pełne tabele (kryteria, przedziały, sytuacje, sędziowie, pary): [`results/res
 - **Odmowy API:** Claude Fable 5.2 i Claude Haiku 5.5 odmówiły po jednej rozmowie, obie w sytuacji „targ” i obie przy towarze „technicznym”
   (skrypt do czyszczenia bazy korporacji, przenoszenie skanu danych). Dwa przypadki to za mało na wniosek, co je wywołało.
 
+**Korekty po recenzji** (trzy niezależne recenzje danych i kodu edycji 1; część wniosków powyżej trzeba czytać z tymi poprawkami):
+
+- **Emulator psuł rozmowy.** W ok. 23% rozmów (318 z 1408) jest co najmniej jedna awaria emulatora gemma3:4b: surowy, ucięty JSON jako wypowiedź użytkownika,
+  echo poprzedniej repliki gracza albo emulator mówiący jako postać. Najczęściej dotyczy to graczy Claude, którzy piszą długo
+  (w wariancie ogólnym 23–35 z 64 rozmów, u modeli z krótkimi replikami 8–16). Po odrzuceniu tych rozmów średnie zmieniają się najwyżej o 0,08.
+- **Nierówne limity graczy.** Modele lokalne miały limit 300 tokenów (`num_predict`), Claude 4000, a GPT żadnego. Goły Bielik v3.0 ma przez to część tur uciętych w pół zdania.
+- **Interakcja sędzia × rodzina.** Sędzia Claude ocenia graczy Claude wyżej względem graczy GPT, niż robi to sędzia GPT, o +0,45 pkt [0,40; 0,51] w wariancie ogólnym
+  i +0,32 w @gra. Sędzia GPT nie daje graczom GPT dodatkowej premii, więc zdanie „każdy sędzia stawia wyżej własną rodzinę o 0,25–0,35” jest nieścisłe.
+  Z dwoma sędziami nie da się rozstrzygnąć, czy sędzia Claude faworyzuje Claude'a, czy sędzia GPT karze jego styl.
+- **Nierozróżnialna jest tylko czołowa trójka** (Opus 5.5, GPT-6.2 sol, Fable 5.2), w obu wariantach; jej kolejność zależy od sędziego. Terra, Sonnet i luna są istotnie niżej.
+- **„Dostrojony Bielik na poziomie Haiku” dotyczy tylko wariantu ogólnego** (+0,10 [−0,02; +0,21]). W @gra dostrojone modele są od Haiku istotnie słabsze (−0,16 do −0,20).
+- **Teza o polszczyźnie się nie utrzymuje po kontroli długości.** Ocena `jezyk` jest za całą turę, więc dłuższa replika ma więcej okazji do usterki.
+  Dostrojony model pisze krócej (ok. 200 znaków), goły Bielik dłużej (ok. 370). Przy tej samej długości repliki przewaga dostrojonego modelu w `jezyk` (+0,18) znika,
+  a Fable i GPT są 0,25–0,6 pkt wyżej. Dostrojenie podnosi głównie `zabawa` i `w_roli`, nie polszczyznę.
+
+**Edycja 1.5 (w toku)** poprawia te problemy: jeden budżet długości w prompcie dla wszystkich graczy, emulator Claude Haiku 5.5 zamiast gemma3:4b
+i brak ucinania replik graczy (`run.py --protocol 1.5`).
+
 **Ograniczenia:**
 
 - Wynik jest względny: porównuje modele ocenione w jednej puli, nie z tablicą oryginalnego PingPonga, która używa innych sędziów (Claude 3.5 Sonnet, GPT-4o), innego emulatora i angielskich rozmów.
@@ -105,7 +129,7 @@ Pełne tabele (kryteria, przedziały, sytuacje, sędziowie, pary): [`results/res
 - Odmowa API (`stop_reason: refusal`) liczy się jako odmowa gracza. Nie ma fallbacku na inny model, bo odmowy są częścią pomiaru.
 - 64 rozmowy na model dają przedziały ±0,1–0,2. Pary na tych samych rozmowach z testem znaków mówią więcej niż same średnie. Przedziały nie obejmują wariancji sędziów, emulatora ani ziarna.
 - Sędziowie należą do rodzin ocenianych modeli (patrz wyżej: preferencja własnej rodziny). W kolejnej edycji planujemy sędziego spoza obu rodzin i ocenę ludzką na próbce.
-- Modele GPT grały przez Codex CLI z podmienionymi instrukcjami (`model_instructions_file`), a nie przez czyste API. Jeden emulator (gemma3:4b) i jedno ziarno. 8 rozmów ma tylko jednego sędziego.
+- Modele GPT grały przez Codex CLI z podmienionymi instrukcjami (`model_instructions_file`), a nie przez czyste API. Jeden emulator (gemma3:4b) i jedno ziarno. 16 rozmów ma tylko jednego sędziego (dwie paczki r2 bez werdyktu Claude).
 
 ## Licencja
 
@@ -122,3 +146,8 @@ entertaining, fluent Polish; Likert 1–5) on blind, anonymised packets. 8 origi
 Players: Ollama, any OpenAI-compatible API, or Claude via the Anthropic SDK. Judges: OpenAI models via Codex CLI
 (`judge_codex.py`), or any judge that writes the documented JSONL format. Scores are relative within one judging pool and are
 not comparable with the original English leaderboard. Licence: Apache-2.0; see NOTICE for what comes from PingPong.
+
+Edition 1 results (including Bielik-11B-v2.1-Instruct: 3.07 general, 3.17 @gra) and the corrections after review are in
+[README.en.md](README.en.md#results). In short: the 4B emulator broke about 23% of conversations, player token limits were unequal,
+judge ratings interact with the player's model family, only the top three are indistinguishable, the tuned Bielik matches Haiku only in the
+general variant, and its language-score gain over bare Bielik disappears once reply length is controlled. A corrected edition 1.5 is in progress.

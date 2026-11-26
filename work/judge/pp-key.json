@@ -7038,5 +7038,645 @@
 "model": "neuro-npc-run27-v31-c2012@gra",
 "char": "kleofas",
 "situation": "walka"
+},
+"pp-1409": {
+"model": "bielik-11b-v2.1",
+"char": "ottilia",
+"situation": "walka"
+},
+"pp-1410": {
+"model": "bielik-11b-v2.1",
+"char": "ottilia",
+"situation": "typowy_uzytkownik"
+},
+"pp-1411": {
+"model": "bielik-11b-v2.1",
+"char": "ottilia",
+"situation": "biografia"
+},
+"pp-1412": {
+"model": "bielik-11b-v2.1@gra",
+"char": "szczygiel",
+"situation": "targ"
+},
+"pp-1413": {
+"model": "bielik-11b-v2.1",
+"char": "aurelia",
+"situation": "biografia"
+},
+"pp-1414": {
+"model": "bielik-11b-v2.1",
+"char": "zorza",
+"situation": "chamstwo"
+},
+"pp-1415": {
+"model": "bielik-11b-v2.1@gra",
+"char": "zorza",
+"situation": "targ"
+},
+"pp-1416": {
+"model": "bielik-11b-v2.1@gra",
+"char": "radwan",
+"situation": "chamstwo"
+},
+"pp-1417": {
+"model": "bielik-11b-v2.1@gra",
+"char": "ludomir",
+"situation": "typowy_uzytkownik"
+},
+"pp-1418": {
+"model": "bielik-11b-v2.1",
+"char": "celestyna",
+"situation": "wyjscie"
+},
+"pp-1419": {
+"model": "bielik-11b-v2.1@gra",
+"char": "ottilia",
+"situation": "wyjscie"
+},
+"pp-1420": {
+"model": "bielik-11b-v2.1@gra",
+"char": "szczygiel",
+"situation": "otoczenie"
+},
+"pp-1421": {
+"model": "bielik-11b-v2.1",
+"char": "aurelia",
+"situation": "typowy_uzytkownik"
+},
+"pp-1422": {
+"model": "bielik-11b-v2.1@gra",
+"char": "ottilia",
+"situation": "chamstwo"
+},
+"pp-1423": {
+"model": "bielik-11b-v2.1@gra",
+"char": "ottilia",
+"situation": "biografia"
+},
+"pp-1424": {
+"model": "bielik-11b-v2.1",
+"char": "kleofas",
+"situation": "chamstwo"
+},
+"pp-1425": {
+"model": "bielik-11b-v2.1",
+"char": "celestyna",
+"situation": "chamstwo"
+},
+"pp-1426": {
+"model": "bielik-11b-v2.1",
+"char": "ludomir",
+"situation": "anty_turing"
+},
+"pp-1427": {
+"model": "bielik-11b-v2.1",
+"char": "celestyna",
+"situation": "typowy_uzytkownik"
+},
+"pp-1428": {
+"model": "bielik-11b-v2.1@gra",
+"char": "aurelia",
+"situation": "anty_turing"
+},
+"pp-1429": {
+"model": "bielik-11b-v2.1",
+"char": "szczygiel",
+"situation": "walka"
+},
+"pp-1430": {
+"model": "bielik-11b-v2.1@gra",
+"char": "radwan",
+"situation": "biografia"
+},
+"pp-1431": {
+"model": "bielik-11b-v2.1",
+"char": "ludomir",
+"situation": "chamstwo"
+},
+"pp-1432": {
+"model": "bielik-11b-v2.1@gra",
+"char": "zorza",
+"situation": "biografia"
+},
+"pp-1433": {
+"model": "bielik-11b-v2.1",
+"char": "aurelia",
+"situation": "walka"
+},
+"pp-1434": {
+"model": "bielik-11b-v2.1@gra",
+"char": "radwan",
+"situation": "targ"
+},
+"pp-1435": {
+"model": "bielik-11b-v2.1",
+"char": "ottilia",
+"situation": "otoczenie"
+},
+"pp-1436": {
+"model": "bielik-11b-v2.1",
+"char": "ottilia",
+"situation": "wyjscie"
+},
+"pp-1437": {
+"model": "bielik-11b-v2.1@gra",
+"char": "zorza",
+"situation": "walka"
+},
+"pp-1438": {
+"model": "bielik-11b-v2.1",
+"char": "radwan",
+"situation": "chamstwo"
+},
+"pp-1439": {
+"model": "bielik-11b-v2.1@gra",
+"char": "celestyna",
+"situation": "chamstwo"
+},
+"pp-1440": {
+"model": "bielik-11b-v2.1@gra",
+"char": "radwan",
+"situation": "otoczenie"
+},
+"pp-1441": {
+"model": "bielik-11b-v2.1@gra",
+"char": "kleofas",
+"situation": "anty_turing"
+},
+"pp-1442": {
+"model": "bielik-11b-v2.1@gra",
+"char": "zorza",
+"situation": "wyjscie"
+},
+"pp-1443": {
+"model": "bielik-11b-v2.1@gra",
+"char": "zorza",
+"situation": "otoczenie"
+},
+"pp-1444": {
+"model": "bielik-11b-v2.1",
+"char": "radwan",
+"situation": "typowy_uzytkownik"
+},
+"pp-1445": {
+"model": "bielik-11b-v2.1",
+"char": "szczygiel",
+"situation": "anty_turing"
+},
+"pp-1446": {
+"model": "bielik-11b-v2.1@gra",
+"char": "kleofas",
+"situation": "typowy_uzytkownik"
+},
+"pp-1447": {
+"model": "bielik-11b-v2.1",
+"char": "radwan",
+"situation": "wyjscie"
+},
+"pp-1448": {
+"model": "bielik-11b-v2.1",
+"char": "radwan",
+"situation": "anty_turing"
+},
+"pp-1449": {
+"model": "bielik-11b-v2.1",
+"char": "ludomir",
+"situation": "biografia"
+},
+"pp-1450": {
+"model": "bielik-11b-v2.1",
+"char": "zorza",
+"situation": "wyjscie"
+},
+"pp-1451": {
+"model": "bielik-11b-v2.1@gra",
+"char": "kleofas",
+"situation": "otoczenie"
+},
+"pp-1452": {
+"model": "bielik-11b-v2.1",
+"char": "celestyna",
+"situation": "targ"
+},
+"pp-1453": {
+"model": "bielik-11b-v2.1",
+"char": "szczygiel",
+"situation": "biografia"
+},
+"pp-1454": {
+"model": "bielik-11b-v2.1",
+"char": "aurelia",
+"situation": "targ"
+},
+"pp-1455": {
+"model": "bielik-11b-v2.1",
+"char": "celestyna",
+"situation": "walka"
+},
+"pp-1456": {
+"model": "bielik-11b-v2.1",
+"char": "szczygiel",
+"situation": "targ"
+},
+"pp-1457": {
+"model": "bielik-11b-v2.1@gra",
+"char": "ludomir",
+"situation": "anty_turing"
+},
+"pp-1458": {
+"model": "bielik-11b-v2.1",
+"char": "aurelia",
+"situation": "chamstwo"
+},
+"pp-1459": {
+"model": "bielik-11b-v2.1@gra",
+"char": "kleofas",
+"situation": "targ"
+},
+"pp-1460": {
+"model": "bielik-11b-v2.1@gra",
+"char": "szczygiel",
+"situation": "typowy_uzytkownik"
+},
+"pp-1461": {
+"model": "bielik-11b-v2.1@gra",
+"char": "celestyna",
+"situation": "typowy_uzytkownik"
+},
+"pp-1462": {
+"model": "bielik-11b-v2.1@gra",
+"char": "aurelia",
+"situation": "targ"
+},
+"pp-1463": {
+"model": "bielik-11b-v2.1@gra",
+"char": "zorza",
+"situation": "anty_turing"
+},
+"pp-1464": {
+"model": "bielik-11b-v2.1",
+"char": "szczygiel",
+"situation": "typowy_uzytkownik"
+},
+"pp-1465": {
+"model": "bielik-11b-v2.1@gra",
+"char": "aurelia",
+"situation": "otoczenie"
+},
+"pp-1466": {
+"model": "bielik-11b-v2.1@gra",
+"char": "ludomir",
+"situation": "wyjscie"
+},
+"pp-1467": {
+"model": "bielik-11b-v2.1@gra",
+"char": "celestyna",
+"situation": "otoczenie"
+},
+"pp-1468": {
+"model": "bielik-11b-v2.1@gra",
+"char": "ottilia",
+"situation": "otoczenie"
+},
+"pp-1469": {
+"model": "bielik-11b-v2.1",
+"char": "zorza",
+"situation": "walka"
+},
+"pp-1470": {
+"model": "bielik-11b-v2.1",
+"char": "celestyna",
+"situation": "anty_turing"
+},
+"pp-1471": {
+"model": "bielik-11b-v2.1",
+"char": "zorza",
+"situation": "anty_turing"
+},
+"pp-1472": {
+"model": "bielik-11b-v2.1@gra",
+"char": "radwan",
+"situation": "walka"
+},
+"pp-1473": {
+"model": "bielik-11b-v2.1@gra",
+"char": "szczygiel",
+"situation": "wyjscie"
+},
+"pp-1474": {
+"model": "bielik-11b-v2.1",
+"char": "aurelia",
+"situation": "wyjscie"
+},
+"pp-1475": {
+"model": "bielik-11b-v2.1@gra",
+"char": "szczygiel",
+"situation": "anty_turing"
+},
+"pp-1476": {
+"model": "bielik-11b-v2.1",
+"char": "zorza",
+"situation": "typowy_uzytkownik"
+},
+"pp-1477": {
+"model": "bielik-11b-v2.1",
+"char": "radwan",
+"situation": "biografia"
+},
+"pp-1478": {
+"model": "bielik-11b-v2.1",
+"char": "zorza",
+"situation": "otoczenie"
+},
+"pp-1479": {
+"model": "bielik-11b-v2.1@gra",
+"char": "kleofas",
+"situation": "chamstwo"
+},
+"pp-1480": {
+"model": "bielik-11b-v2.1",
+"char": "ottilia",
+"situation": "chamstwo"
+},
+"pp-1481": {
+"model": "bielik-11b-v2.1",
+"char": "kleofas",
+"situation": "otoczenie"
+},
+"pp-1482": {
+"model": "bielik-11b-v2.1@gra",
+"char": "ludomir",
+"situation": "otoczenie"
+},
+"pp-1483": {
+"model": "bielik-11b-v2.1",
+"char": "celestyna",
+"situation": "biografia"
+},
+"pp-1484": {
+"model": "bielik-11b-v2.1@gra",
+"char": "aurelia",
+"situation": "typowy_uzytkownik"
+},
+"pp-1485": {
+"model": "bielik-11b-v2.1@gra",
+"char": "ludomir",
+"situation": "targ"
+},
+"pp-1486": {
+"model": "bielik-11b-v2.1",
+"char": "ottilia",
+"situation": "anty_turing"
+},
+"pp-1487": {
+"model": "bielik-11b-v2.1",
+"char": "kleofas",
+"situation": "typowy_uzytkownik"
+},
+"pp-1488": {
+"model": "bielik-11b-v2.1",
+"char": "szczygiel",
+"situation": "wyjscie"
+},
+"pp-1489": {
+"model": "bielik-11b-v2.1@gra",
+"char": "ottilia",
+"situation": "targ"
+},
+"pp-1490": {
+"model": "bielik-11b-v2.1",
+"char": "zorza",
+"situation": "biografia"
+},
+"pp-1491": {
+"model": "bielik-11b-v2.1@gra",
+"char": "aurelia",
+"situation": "chamstwo"
+},
+"pp-1492": {
+"model": "bielik-11b-v2.1",
+"char": "kleofas",
+"situation": "targ"
+},
+"pp-1493": {
+"model": "bielik-11b-v2.1@gra",
+"char": "zorza",
+"situation": "chamstwo"
+},
+"pp-1494": {
+"model": "bielik-11b-v2.1@gra",
+"char": "szczygiel",
+"situation": "biografia"
+},
+"pp-1495": {
+"model": "bielik-11b-v2.1@gra",
+"char": "ottilia",
+"situation": "anty_turing"
+},
+"pp-1496": {
+"model": "bielik-11b-v2.1",
+"char": "ottilia",
+"situation": "targ"
+},
+"pp-1497": {
+"model": "bielik-11b-v2.1@gra",
+"char": "celestyna",
+"situation": "walka"
+},
+"pp-1498": {
+"model": "bielik-11b-v2.1@gra",
+"char": "ludomir",
+"situation": "walka"
+},
+"pp-1499": {
+"model": "bielik-11b-v2.1",
+"char": "ludomir",
+"situation": "otoczenie"
+},
+"pp-1500": {
+"model": "bielik-11b-v2.1",
+"char": "aurelia",
+"situation": "otoczenie"
+},
+"pp-1501": {
+"model": "bielik-11b-v2.1",
+"char": "celestyna",
+"situation": "otoczenie"
+},
+"pp-1502": {
+"model": "bielik-11b-v2.1@gra",
+"char": "kleofas",
+"situation": "biografia"
+},
+"pp-1503": {
+"model": "bielik-11b-v2.1",
+"char": "aurelia",
+"situation": "anty_turing"
+},
+"pp-1504": {
+"model": "bielik-11b-v2.1@gra",
+"char": "aurelia",
+"situation": "wyjscie"
+},
+"pp-1505": {
+"model": "bielik-11b-v2.1@gra",
+"char": "aurelia",
+"situation": "biografia"
+},
+"pp-1506": {
+"model": "bielik-11b-v2.1",
+"char": "radwan",
+"situation": "walka"
+},
+"pp-1507": {
+"model": "bielik-11b-v2.1",
+"char": "szczygiel",
+"situation": "chamstwo"
+},
+"pp-1508": {
+"model": "bielik-11b-v2.1@gra",
+"char": "kleofas",
+"situation": "wyjscie"
+},
+"pp-1509": {
+"model": "bielik-11b-v2.1",
+"char": "kleofas",
+"situation": "biografia"
+},
+"pp-1510": {
+"model": "bielik-11b-v2.1",
+"char": "kleofas",
+"situation": "anty_turing"
+},
+"pp-1511": {
+"model": "bielik-11b-v2.1@gra",
+"char": "celestyna",
+"situation": "anty_turing"
+},
+"pp-1512": {
+"model": "bielik-11b-v2.1@gra",
+"char": "ottilia",
+"situation": "typowy_uzytkownik"
+},
+"pp-1513": {
+"model": "bielik-11b-v2.1@gra",
+"char": "kleofas",
+"situation": "walka"
+},
+"pp-1514": {
+"model": "bielik-11b-v2.1",
+"char": "kleofas",
+"situation": "wyjscie"
+},
+"pp-1515": {
+"model": "bielik-11b-v2.1@gra",
+"char": "ludomir",
+"situation": "chamstwo"
+},
+"pp-1516": {
+"model": "bielik-11b-v2.1@gra",
+"char": "zorza",
+"situation": "typowy_uzytkownik"
+},
+"pp-1517": {
+"model": "bielik-11b-v2.1@gra",
+"char": "radwan",
+"situation": "anty_turing"
+},
+"pp-1518": {
+"model": "bielik-11b-v2.1@gra",
+"char": "ludomir",
+"situation": "biografia"
+},
+"pp-1519": {
+"model": "bielik-11b-v2.1",
+"char": "szczygiel",
+"situation": "otoczenie"
+},
+"pp-1520": {
+"model": "bielik-11b-v2.1@gra",
+"char": "szczygiel",
+"situation": "walka"
+},
+"pp-1521": {
+"model": "bielik-11b-v2.1",
+"char": "radwan",
+"situation": "otoczenie"
+},
+"pp-1522": {
+"model": "bielik-11b-v2.1",
+"char": "ludomir",
+"situation": "typowy_uzytkownik"
+},
+"pp-1523": {
+"model": "bielik-11b-v2.1@gra",
+"char": "celestyna",
+"situation": "biografia"
+},
+"pp-1524": {
+"model": "bielik-11b-v2.1@gra",
+"char": "celestyna",
+"situation": "wyjscie"
+},
+"pp-1525": {
+"model": "bielik-11b-v2.1",
+"char": "zorza",
+"situation": "targ"
+},
+"pp-1526": {
+"model": "bielik-11b-v2.1",
+"char": "kleofas",
+"situation": "walka"
+},
+"pp-1527": {
+"model": "bielik-11b-v2.1@gra",
+"char": "aurelia",
+"situation": "walka"
+},
+"pp-1528": {
+"model": "bielik-11b-v2.1@gra",
+"char": "radwan",
+"situation": "wyjscie"
+},
+"pp-1529": {
+"model": "bielik-11b-v2.1",
+"char": "ludomir",
+"situation": "walka"
+},
+"pp-1530": {
+"model": "bielik-11b-v2.1@gra",
+"char": "szczygiel",
+"situation": "chamstwo"
+},
+"pp-1531": {
+"model": "bielik-11b-v2.1@gra",
+"char": "celestyna",
+"situation": "targ"
+},
+"pp-1532": {
+"model": "bielik-11b-v2.1",
+"char": "radwan",
+"situation": "targ"
+},
+"pp-1533": {
+"model": "bielik-11b-v2.1@gra",
+"char": "ottilia",
+"situation": "walka"
+},
+"pp-1534": {
+"model": "bielik-11b-v2.1",
+"char": "ludomir",
+"situation": "targ"
+},
+"pp-1535": {
+"model": "bielik-11b-v2.1",
+"char": "ludomir",
+"situation": "wyjscie"
+},
+"pp-1536": {
+"model": "bielik-11b-v2.1@gra",
+"char": "radwan",
+"situation": "typowy_uzytkownik"
 }
 }
